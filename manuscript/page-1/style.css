@@ -1,4 +1,4 @@
-  body {
+body {
   width: 100%;
   overflow: hidden;
   background: linear-gradient(cyan, transparent), linear-gradient(-45deg, magenta, transparent), linear-gradient(45deg, yellow, transparent);
@@ -6,5 +6,10 @@
   height: 100vh;
   weight: 100vw;
   background-repeat: no-repeat;
+  color: white;
 }
 
+h1 {
+  color: white;
+  font-size: 14vw;
+}
