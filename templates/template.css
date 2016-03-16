@@ -79,3 +79,7 @@ a:active {
 }
 
 /* Your custom styles below */
+
+.center {
+  text-align: center;
+}
