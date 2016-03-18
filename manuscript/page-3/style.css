@@ -30,15 +30,3 @@
   font-size: 6vw;
 }
 
-a {
-  color: #0077ff;
-  outline: 0 none;
-  text-rendering: optimizelegibility;
-  text-decoration: none;
-}
-
-a:focus,
-a:active,
-a:hover {
-  outline: 0 none;
-}
