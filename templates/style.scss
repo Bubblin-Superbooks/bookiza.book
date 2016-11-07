@@ -74,4 +74,46 @@ a {
   text-align: center;
 }
 
+
 /* Your custom styles below */
+
+
+.subhead {
+  font-size:60%;
+}
+
+.head{
+  font-family: 'Lato', serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tape {
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: hsla(144, 80%, 33%, 1);
+    font-size: 3vw;
+}
+
+.tape div.chaptername {
+  width: 80vw;
+  padding: 0 2vw;
+}
+
+.tape div.chapter {
+  width: 20vw;
+  height: 5vh;
+  background: gray;
+  color: white;
+}
+
+.right {
+  text-align: right;
+  float:right;
+}
