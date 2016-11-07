@@ -20,20 +20,6 @@ body {
   text-align: center;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
 
 #instruct {
   width: 18vw;
@@ -57,36 +43,43 @@ body {
     top: -20px;
     left: 0px;
   }
+
   20% {
     top: 0px;
     left: -15px;
     -webkit-transform: rotate(10deg);
   }
+
   80% {
     top: 0px;
     left: 15px;
   }
+
   100% {
     top: -20px;
     left: 0px;
   }
 }
 
+
 @keyframes ud {
   0% {
     top: -20px;
     left: 0px;
   }
+
   20% {
     top: 0px;
     left: -15px;
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
   }
+
   80% {
     top: 0px;
     left: 15px;
   }
+
   100% {
     top: -20px;
     left: 0px;
