@@ -1,6 +1,10 @@
 {
-  "HTML": "html",
-  "CSS": "css",
-  "JS": "js",
-  "HEAD": "html"
+  "mode": {
+    "HTML": "haml",
+    "CSS": "css",
+    "JS": "js",
+    "HEAD": "html"
+  },
+  "name": "bookiza framework",
+  "type": "text"
 }

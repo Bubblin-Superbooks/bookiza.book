@@ -1,14 +1,14 @@
 {
-  "name": "bookiza-framework",
+  "name": " <projectName> ",
   "version": "0.0.4",
-  "description": "Superbook Bookiza Framework by Marvin Danig",
+  "description": "Superbook <projectName> by <username>",
   "keywords": [
     "superbook",
     "bookiza"
   ],
-  "author": "marvin <marvin@bubbl.in> (https://bubbl.in/marvin)",
-    "license": "ISC",
-  "homepage": "https://bubbl.in/rchristiani",
+  "author": " <username> <your@email.com> <(https://bubbl.in/<username>)>",
+  "license": "ISC",
+  "homepage": "https://bubbl.in/<username>",
   "repository": {
     "type": "git",
     "url": "git+https://github/project/url/here"
