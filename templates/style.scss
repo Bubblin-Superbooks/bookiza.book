@@ -9,7 +9,6 @@ body {
   color: #444;
 }
 
-
 h1 {
   font-weight: 900;
   font-size: 8vw;
@@ -37,17 +36,13 @@ a {
   outline: 0 none;
   text-decoration: none;
   text-rendering: optimizelegibility;
-}
-
-a:focus,
-a:active,
-a:hover {
-  outline: 0 none;
-  text-shadow: 0 0 1px #0c0;
-}
-
-a:active {
-  text-shadow: 0 0 1px #050;
+  &:focus, &:active, &:hover {
+    outline: 0 none;
+    color: #0af;
+  }
+  &:active {
+    text-shadow: 0 0 1px #050;
+  }
 }
 
 /* Page specific */
@@ -74,8 +69,6 @@ a:active {
 .justify {
   text-align: justify;
 }
-
-/* Your custom styles below */
 
 .center {
   text-align: center;

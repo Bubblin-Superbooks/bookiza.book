@@ -148,7 +148,7 @@
 
   // Glob pattern matching
   const glob = [path.join('manuscript', '*'),
-    path.join('manuscript', '*', '*.+(js|css|html|markdown|md|haml|less|styl)')
+    path.join('manuscript', '*', '*.+(js|css|html|markdown|md|haml|less|styl|scss|sass)')
   ]
 
   // *************************************//

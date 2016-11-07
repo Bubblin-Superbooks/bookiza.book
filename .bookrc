@@ -1,10 +1,11 @@
 {
   "mode": {
     "HTML": "haml",
-    "CSS": "css",
+    "CSS": "scss",
     "JS": "js",
     "HEAD": "html"
   },
-  "name": "bookiza framework",
-  "type": "text"
+  "name": "Bookiza Documentation",
+  "type": "text",
+  "book_id": 167
 }
