@@ -2,19 +2,50 @@
   .chapter.flex Chapter 7
   .chaptername Templates
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
     %h1 Templates
     %p 
+      Bookiza comes with several built-in responsive and FREE 
+      %a{href: "https://github.com/bookiza/templates" } 
+        templates 
+      so that writers don't have to worry about the layouts or design. Pass the `templateName` option to `bookiza new` command (see above) to apply a layout you want. 
+    %p
+      Current 
+      %span.monospace 
+        templateName 
+      options are:
+
+      %ul
+        %li
+          comics
+        %li
+          text
+        %li
+          magazine
+        %li
+          novel
+        %li
+          super
+        %li
+          blank
 
     %p
+      Feel free to contribute new templates from the stories you make but ensure that those work responsively 
+      %a{href: "https://bubbl.in/support"} 
+        everywhere. 
+      Or at least on as many devices as possible.
 
-    .terminal.turnoff
+
+    .notice 
+
       %p
-        $ git config --global user.name "Your Full Name"
-
-    %h4 Windows
-
-    %p 
-
-
+        We're accepting new templates for all kinds of longform. 
+      %p
+        Feel free to 
+        %a{ href: "https://github.com/bookiza/templates#fork-destination-box"}
+          fork 
+        and submit pull requests per following 
+        %a{ href: "https://github.com/bookiza/templates#rules"}
+          rules 
+        for any kind of book that you may have worked on.

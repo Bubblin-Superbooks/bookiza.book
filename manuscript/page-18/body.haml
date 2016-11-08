@@ -2,22 +2,67 @@
   .chapter.flex Chapter 6
   .chaptername Commands
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
     %h1 Commands
     %p 
-
-    %p
-
+      Bookiza commands let you manage your manuscript smartly. To see the full glossary type:
     .terminal.turnoff
-      %p
-        $ git config --global user.name "Your Full Name"
-      %p
-        $ git config --global user.email "your@email.com"
+      %p $ bookiza --help
+    %p
+      Usage: bookiza [options] [command]
 
-
-    %h4 Windows
-
-    %p 
-
-
+    %table
+      %tbody
+        %tr
+          %th Command
+          %th Alias
+          %th Arguments
+          %th Options/flags
+          %th Purpose
+        %tr
+          %td new
+          %td n
+          %td projectName 
+          %td 
+            %p \--template 
+            %p \--leafs
+            
+          %td Set up the project
+        %tr
+          %td add
+          %td a
+          %td 
+          %td \--leafs
+          %td Add leaf(s) at the end of book
+        %tr
+          %td insert
+          %td i
+          %td insertAt
+          %td \--leafs
+          %td Insert leaf(s) in between pages.
+        %tr
+          %td remove
+          %td r
+          %td removeAt 
+          %td 
+          %td Remove page (not leaf!) and append a blank one.
+        %tr
+          %td clip
+          %td c
+          %td 
+          %td \--leafs
+          %td Clip leaf(s) off the stack (End of book).
+    %p
+      To understand why 
+      %em 
+        add, 
+      %em
+        remove 
+      or 
+      %em 
+        insert 
+      work the way they do, read the 
+      %a{href: "https://bubbl.in/book/official-handbook-by-marvin-danig/37"} 
+        following page 
+      on the Official Handbook.

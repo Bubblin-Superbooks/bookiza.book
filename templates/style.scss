@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html, body {
-  font-size: 3vw;
+  font-size: 3.2vw;
   color: #2f2f2f;
   background-color: #f9f7f1;
   font-family: 'Playfair Display', serif;
@@ -14,19 +14,32 @@ html, body {
 
 h1 {
   font-weight: 900;
-  font-size: 8vw;
+  font-size: 6vw;
   text-transform: uppercase;
   display: inline-block;
   line-height: 1.5;
-  margin: 1vw 0 2vw;
+  margin: 1vw 0 1vw;
   padding: 0;
   color: #666;
   width: 100%;
   text-align: center;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 2vw 0;
+    padding: 0;
+}
+
+
+
 p {
-    margin: 3vw 0;
+    margin: 2vw 0;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
@@ -119,7 +132,7 @@ a {
     left: 0;
     color: white;
     background: hsla(144, 80%, 33%, 1);
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .tape div.chaptername {
