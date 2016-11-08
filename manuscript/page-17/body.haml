@@ -1,11 +1,36 @@
-<div class="leaf flex">
-  <div class="inner justify ">
-    <h1>New York</h1>
-    <div class="subhead">York, MA - Friday March 18, 2016 - Seven Leafs</div>
-    <div class="subhead">by<span class="uppercase"> Marvin Von Danig Goethe</span> </div>
-    <h4>When lights overshadow the dark</h4>
-    <p> When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; </p>
-    <p> I feel a presence.</p>
-    <p> Of the Almighty?, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth. </p>
-  </div>
-</div>
+%header.tape.flex
+  .chaptername.right Manuscript
+  .chapter.flex Chapter 5
+
+%main.leaf.flex
+  .inner.justify
+    %h1 Manuscript
+    %p 
+      Now for the moment of truth. 
+    %p
+      To initialize a new project (book, comics, magazine or blank) with exactly '2N' number of pages pass the 
+      %span.monospace 
+        \--leafs 
+      option with value 'N' and a template name if required. 
+      Like so:
+    .terminal.turnoff
+      %p
+        $ bookiza new MY-AWESOME-BOOK-TITLE --leafs n --template comics 
+
+
+    %p
+      Bookiza's 
+      %span.monospace new 
+      command will set up your project, bootstrap the manuscript (leafs) along with necessary configurations and apply the layout template you passed along in the options (if any). 
+    %p
+      Bookiza will also 
+      %em 
+        npm install 
+      all the dependencies your project will need, 
+      %em git initialize 
+      the project and then seek confirmation from you to check-it into Github.
+      
+    %p
+      Inside the manuscript/ folder you’ll find that 2N number of blank pages, the place where you’ll be spending maximum of your time writing.
+
+
