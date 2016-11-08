@@ -2,19 +2,38 @@
   .chapter.flex Chapter 9
   .chaptername Preprocessors
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
-    %h1 Templates
+    %h1 Preprocessors
     %p 
-
+      Customize bookiza according to your taste, make your book stand apart. Bookiza comes in multiple flavors: HAML, PUG, markdown, SASS, LESS, Stylus etc. 
     %p
-
-    .terminal.turnoff
-      %p
-        $ git config --global user.name "Your Full Name"
-
-    %h4 Windows
-
-    %p 
-
-
+      There are two ways to configure bookiza for your book:
+    %ol
+      %li
+        Globally, using 
+        %span.monospace 
+          \.bookizarc
+      %li
+        Locally, per project, using 
+        %span.monospace 
+          \.bookrc
+    %p
+      For example, this 
+      %a{href: "https://github.com/marvindanig/bookiza-framework" } 
+        sample book 
+      uses 
+      %em
+        \.haml 
+      and 
+      %em
+        \.scss 
+      instead of plain html and css.
+    %p
+      Configuring bookiza will set its 
+      %span.monospace generators
+      and 
+      %span.monospace renderers
+      to use the appropriate templating engine (or preprocessor) for all its pages (and layout templates). You can also use a combination of preprocessors within the same book with a more complicated setup (discussed elsewhere). 
+    %p
+      By default Bookiza is configured for the native web i.e. plain HTML, CSS and JavaScript. The output of the build is always HTML, CSS and JavaScript as well no matter what preprocessor logic or transformations are applied on the manuscript. 

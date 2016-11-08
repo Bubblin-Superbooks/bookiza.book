@@ -2,25 +2,27 @@
   .chaptername.right Bubblin
   .chapter.flex Chapter 10
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
     %h1 Bubblin 
+    %p
+      Bubblin is a community of book lovers on the web. A marketplace for beautiful responsive books. Visit 
+      %a{ href: "https://bubbl.in" } 
+        https://bubbl.in 
+      to learn more about its slew of web/marketplace specific features that may be relevant for your book.
     %p 
-      Bookiza comes pre-integrated with Bubblin's POST/PATCH API. This allows us to publish and update our works online easily with just one command: 
+      Bookiza comes pre-integrated with Bubblin's POST/PATCH API. This allows for publishing works directly with just one easy command: 
       %span.monospace $ bookiza publish. 
     %p
       If you registered the 
-      %em bookiza client 
-      earlier but do not remember your credentials then:
+      %em 
+        bookiza client 
+      earlier but do not remember your credentials then try:
 
     .terminal.turnoff
       %p
-        $ bookiza whoami      #### Shortcut = $ b w  #### See $ b -h
+        $ bookiza whoami     
       
-    %p
-      Bubblin is a community of book lovers on the web. 
-    %p
-      It has several additional marketplace specific features that let you sell your books online, or edit book in real-time or withdraw/re-publish on-the-fly in case it is necessary to do so. 
 
 
 

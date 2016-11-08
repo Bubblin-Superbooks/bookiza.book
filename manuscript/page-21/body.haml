@@ -1,18 +1,20 @@
 %header.tape.flex
-  .chaptername.right Afterthought
+  .chaptername.right Afterthoughts
   .chapter.flex Chapter 8
 
 %main.leaf.flex
   .inner.justify
-    %p 
-      Bookiza must be registered to be able to publish books online. 
+    %h1
+      Afterthoughts
     %p
-      It comes pre-integrated with Bubblin's POST & PATCH API so you can publish your work online easily with just one command: 
-      %span.monospace $ bookiza publish. 
-
-    .terminal.turnoff
-      %p
-        $ bookiza register      ### Shortcut = $ b z  #### See $ b -h
-
+      With mobile becoming a dominant way for people to consume web, Bookiza brings only the most natural form of reading experience that people have loved for over a millenium: Flipping pages.
     %p
-      Whatever
+      Here are a few afterthoughts that will help you better understand how Bookiza work:
+    %ol
+      %li
+        A book is a 
+        %em 
+          collection 
+        of several webpages just like a website is, but the arrangement of pages on a book is an ordered stack. Pagination by splitting content into equal sized pages is a great way to optimize for linear reading direction—either forward or backwards. 
+      %li
+        Content that is piecemealed (chunked) and neatly stacked together (paginated) makes for better readability and better maintainability along with finer control on layout issues: i.e. presentation and compatibility. It also improves memorizability.
