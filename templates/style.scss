@@ -1,5 +1,6 @@
-body {
-  font-family: 'Droid Serif', serif;
+@charset "UTF-8";
+
+html, body {
   font-size: 3vw;
   color: #2f2f2f;
   background-color: #f9f7f1;
@@ -7,6 +8,8 @@ body {
   margin: 0 0;
   overflow: hidden;
   color: #444;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1 {
@@ -23,7 +26,20 @@ h1 {
 }
 
 p {
-  margin: 3vw 0;
+    margin: 3vw 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+p.chapter-begin:first-letter {
+    display: inline-block;
+    margin: 5vw 1vw .1vw 0;
+    float: left;
+    line-height: 10vw;
+    font-size: 25vw;
+    color: #bf5740;
+    font-family: 'Luckiest Guy', serif;
 }
 
 img {
@@ -75,6 +91,11 @@ a {
 }
 
 
+
+
+
+
+
 /* Your custom styles below */
 
 
@@ -116,4 +137,94 @@ a {
 .right {
   text-align: right;
   float:right;
+}
+
+.monospace, .highlight {
+  font-family: monospace;
+  font-size: 2.5vw;
+  background: #ff0;
+  border: 1px solid #ff0;  
+  color: #444;
+  padding: .2vw 1vw;
+  border-radius: .5vw;
+  margin: 0 .5vw;
+}
+
+
+pre, code {
+  overflow-x: auto;
+  font-size: 80%;
+  color: hsla(358, 73%, 47%, 1);
+  padding: 0;
+}
+
+.code-block {
+  margin: 2vw 0;
+  width: 80vw;
+  background: #fff;
+  border: 1px solid hsla(358, 73%, 47%, 1);
+  padding: 0 2.5vw;
+  border-radius: 1vw;
+}
+
+
+.terminal {
+  background-color: black;
+  color: #55ff55;
+  margin: 3vw 0;
+  width: 75vw;
+  border: 1px solid #ccc;
+  padding: 2vw 5vw;
+  border-radius: 1vw;
+  font-family: monospace;
+  font-size: 75%;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.prompt {
+  background: #55ff55;
+  height: 1em;
+  width: 0.75em;
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+
+@-webkit-keyframes blink {
+  0% {
+    background: #55ff55;
+  }
+  49% {
+    background: #55ff55;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background: #55ff55;
+  }
+  49% {
+    background: #55ff55;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+.notice {
+  font-size: 80%;
+  background: #ffc;
+  width: 80vw;
+  padding: 0.5vh 2.5vw;
 }

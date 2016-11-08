@@ -1,11 +1,40 @@
-<div class="leaf flex">
-  <div class="inner justify ">
-    <h1>New York</h1>
-    <div class="subhead">York, MA - Friday March 18, 2016 - Seven Leafs</div>
-    <div class="subhead">by<span class="uppercase"> Marvin Von Danig Goethe</span> </div>
-    <h4>When lights overshadow the dark</h4>
-    <p> When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; </p>
-    <p> I feel a presence.</p>
-    <p> Of the Almighty?, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth. </p>
-  </div>
-</div>
+%header.tape.flex
+  .chapter.flex Chapter 4 
+  .chaptername Registration 
+
+%main.leaf.flex
+  .inner.justify
+    %h4 Manual registration
+
+    %p
+      You can also set the the 
+      %span.monospace api_key 
+      and user credentials manually. 
+      Paste the following 
+      %a{href: "https://raw.githubusercontent.com/bookiza/bookiza/master/.bookizarc"} 
+        gist 
+      into an arc file (.bookizarc) at the root of your system.
+
+    .terminal.turnoff
+      %p
+        $ touch .bookizarc      // At the root
+      %p
+        $ vi .bookizarc         // Copy & paste the gist above:
+    
+
+    %p
+      Complete these steps at the root of your machine:
+      %ul 
+        %li
+          Create a dotfile named .bookizarc (Bookiza Arc).
+        %li
+          Open the file in an editor and paste the gist linked above.
+        %li
+          Paste the 
+          %span.monospace api_key 
+          from your Bubblin Account (in /Settings) on bookiza arc.
+        %li
+          Place your Bubblin username & email on the bookiza arc, save and close.
+
+      You're all set. 
+
