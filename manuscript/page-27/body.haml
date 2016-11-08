@@ -1,16 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 400 400">
-  <defs>
-    <!-- The text path: see links above regarding coordinate system -->
-    <path d="M0, 200a200, 200 0 1, 0 400, 0a200, 200 0 1, 0 -400, 0" id="txt-path"></path>
-  </defs>
-  <g id="orb">
-    <circle fill="none" stroke="#E8A121" stroke-width="2" cx="200" cy="200" r="232" />
-    <circle fill="none" cx="200" cy="200" r="230" />
-    <circle fill="#FFB93A" cx="200" cy="200" r="100" />
-    <circle fill="#FE9331" cx="200" cy="200" r="40" />
-    <circle fill="#FFFBD1" cx="200" cy="200" r="6" /> </g>
-  <text fill="#FCEDBF" font-size="25.5" font-family="Helvetica Neue" font-weight="600">
-    <!-- This is the magic -->
-    <textPath startOffset="0" xlink:href="#txt-path">As the dawn began to break I had to surrender. The universe will have it's way; too powerful to master.</textPath>
-  </text>
-</svg>
+<div class='dragon-radar'>
+  <label class='dragon-radar-button' for='screen-toggle'>
+    <div class='dragon-radar-button__knob'></div>
+  </label>
+  <input id='screen-toggle' type='checkbox'>
+  <div class='radar-screen'>
+    <div class='radar-screen__content--positions'>
+      <div class='current-position'></div>
+      <div class='ball-indicators'>
+        <div class='ball-indicator'>2</div>
+        <div class='ball-indicator'></div>
+        <div class='ball-indicator'>4</div>
+      </div>
+    </div>
+    <div class='radar-screen__content--tracking'>
+      <div class='tracking-motion'>
+        <div class='ball-indicator'>1</div>
+        <div class='tracking-line'>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+          <div class='track-indicator'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
