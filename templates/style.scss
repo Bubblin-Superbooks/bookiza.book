@@ -40,9 +40,9 @@ h6 {
 
 p {
     margin: 2vw 0;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 
 p.chapter-begin:first-letter {
