@@ -30,7 +30,6 @@ h1 {
   line-height: 1.5;
   margin: 1vw 0 1vw;
   padding: 0;
-  color: #666;
   width: 100%;
   text-align: center;
 }
@@ -89,13 +88,18 @@ a {
 .leaf {
   height: 100%;
   height: 100vh;
-  width: 80%;
+  width: 100%;
+  width: 100vw;
   margin: auto;
 }
 
 .inner {
-  margin: 12% auto;
-  width: 100%;
+  margin: calc((100vh - (17 * (4vw * 1.5) + 4vw))/2) auto;
+  width: 85vw;
+  height: calc(17 * (4vw * 1.5) + 4vw);
+  max-height: calc(17 * (4vw * 1.5) + 4vw);
+  break-after: right;
+  display:inline-block;
 }
 
 .flex {
@@ -135,24 +139,25 @@ a {
 }
 
 .tape {
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     color: white;
-    background: hsla(144, 80%, 33%, 1);
-    font-size: 2.5vw;
+    background: #fa4;
+    font-size: 3vw;
+    font-weight: 400;
 }
 
 .tape div.chaptername {
   width: 80vw;
-  padding: 0 2vw;
+  padding: 0 1.5vw;
 }
 
 .tape div.chapter {
   width: 20vw;
-  height: 5vh;
+  height: 6vh;
   background: gray;
   color: white;
 }

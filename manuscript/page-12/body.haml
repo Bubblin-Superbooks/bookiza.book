@@ -5,36 +5,39 @@
 %main.leaf.flex
   .inner.justify
 
-    %h4 Linux / Ubuntu
-
-    %p 
-      On Ubuntu use the apt package management system or the command line utility 
-      %span.monospace apt-get 
-      (or optionally the graphical user interfaces like Synaptic or Aptitude) to install Git. 
-
-    %p 
-      Upon completing installation make sure to configure Git global user.name and global user.email as shown for mac users earlier.
-
-
+    %h4 Install GIT
+    
     %p
-      To install git on Ubuntu & Fedora (Linux based) systems:
+      Internally Bookiza utilizes 
+      %a{ href: "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"} 
+        git-scm  
+      to hook up your manuscript to a repository. While not mandatory it is highly recommended to check-in your manuscript into a repository service like 
+      %a{ href: "https://github.com" } 
+        Github 
+      or 
+      %a{ href: "https://bitbucket.org"} 
+        Bitbucket 
+      and back it up. You can use any other version control software if you like. 
+
+      %h5 Mac / El Capitan
+      %p
+        If you are using Mac, you may already have Git. To find out, open a terminal and enter 
+        %span.monospace 
+          git --version. 
+        If it's not already installed: 
+        .terminal.turnoff
+          $ brew install git
+
+      %p
+        Or you can 
+        %a{ href: "http://git-scm.com/downloads" } 
+          download 
+        the installer, double-click the dmg and complete its installation. 
     .terminal.turnoff
       %p
-        $ sudo apt-get install git  # Ubuntu/Debian 
-
+        ~/your/terminal/root$ git --version 
       %p 
-        $ sudo yum install git-all  # Fedora
-    %p
-      Check with
-      %span.monospace 
-        git --version. 
-      if it's installed correctly.
+        git version 2.10.1
+        %span.prompt 
+          &nbsp;
 
-    %h4
-      Install Bookiza
-
-    %p On your terminal run:
-
-    .terminal.turnoff
-      %p
-        $ npm install bookiza -g  

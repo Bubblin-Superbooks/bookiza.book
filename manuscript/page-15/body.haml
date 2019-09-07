@@ -1,40 +1,48 @@
 %header.tape.flex
-  .chapter.flex Chapter 4 
-  .chaptername Registration 
+  .chapter.flex Chapter 3
+  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
-    %h4 Manual registration
-
     %p
-      You can also set the the 
-      %span.monospace api_key 
-      and user credentials manually. 
-      Paste the following 
-      %a{href: "https://raw.githubusercontent.com/bookiza/bookiza/master/.bookizarc"} 
-        gist 
-      into an arc file (.bookizarc) at the root of your system.
+      The installation would take a few a minutes.
+
+    %p 
+      You'll need to install 
+      %em 
+        bookiza 
+      and 
+      %em 
+        gulp 
+
+      globally. Once the installation is complete, check with 
+      %span.monospace $ bookiza --version.
 
     .terminal.turnoff
       %p
-        $ touch .bookizarc      // At the root
-      %p
-        $ vi .bookizarc         // Copy & paste the gist above:
-    
+        $ bookiza --version
+      1.0.1
 
     %p
-      Complete these steps at the root of your machine:
-      %ul 
-        %li
-          Touch a dotfile named .bookizarc (Bookiza Arc).
-        %li
-          Open the file in an editor and paste the gist above.
-        %li
-          Paste the 
-          %span.monospace api_key 
-          from your Bubblin Account (in /Settings) on the bookiza arc.
-        %li
-          Place your Bubblin username & email on the bookiza arc, save and close.
+      For glossary:
 
-      You're all set. 
+    .terminal.turnoff
+      %p
+        $ bookiza --help        // Glossary
 
+
+
+    .notice 
+      %p
+        If for some reason you cannot upgrade to NodeJS v6.2.0 (or above) on your system, you might want to try using Bookiza 
+        %em 
+          as-is 
+        with an older versions of node first. If it still doesn't work use 
+        %span.monospace \--harmony 
+        flag in the shebangs of <a href="https://github.com/bookiza/bookiza/blob/master/bin/bin.js">bin.js</a>. 
+
+      %p 
+        Read more about this 
+        %a{ href: "http://stackoverflow.com/questions/28756759/how-to-start-global-npm-module-with-harmony-flag"} 
+          issue 
+        on Stackoverflow. 

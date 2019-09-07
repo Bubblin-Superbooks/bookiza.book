@@ -1,30 +1,40 @@
 %header.tape.flex
-  .chaptername.right Registration
-  .chapter.flex Chapter 4
+  .chaptername.right Installation
+  .chapter.flex Chapter 3
 
-%main.leaf
+%main.leaf.flex
   .inner.justify
-    %h1 Registration
+
+    %h4 Linux / Ubuntu
+
     %p 
-      Bookiza must be registered to be able to publish books online. 
+      On Ubuntu use the apt package management system or the command line utility 
+      %span.monospace apt-get 
+      (or optionally the graphical user interfaces like Synaptic or Aptitude) to install Git. 
+
+    %p 
+      Upon completing installation make sure to configure Git global user.name and global user.email as shown for mac users earlier.
+
+
     %p
-      It comes pre-integrated with Bubblin's POST & PATCH API so you can publish your work online easily with just one command: 
-      %span.monospace $ bookiza publish. 
+      To install git on Ubuntu & Fedora (Linux based) systems:
+    .terminal.turnoff
+      %p
+        $ sudo apt-get install git  # Ubuntu/Debian 
+
+      %p 
+        $ sudo yum install git-all  # Fedora
     %p
-      To register:
+      Check with
+      %span.monospace 
+        git --version. 
+      if it's installed correctly.
+
+    %h4
+      Install Bookiza
+
+    %p On your terminal run:
 
     .terminal.turnoff
       %p
-        $ bookiza register      ### Shortcut = $ b z  #### See $ b -h
-
-    %p
-      Sign up on 
-      %a{ href: "https://bubbl.in/about"} Bubblin 
-      —a hosting platform for superbooks—to get your 
-      %span.monospace api_key 
-      & bubblin credentials for the registration above. 
-
-    %p
-      Note: Your Bubblin 
-      %span.monospace api_key  
-      is a secret. Keep it safe and do not check it in or share with anyone.
+        $ npm install bookiza -g  

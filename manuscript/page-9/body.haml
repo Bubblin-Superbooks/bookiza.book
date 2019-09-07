@@ -1,32 +1,35 @@
 %header.tape.flex
-  .chapter.flex Chapter 3
-  .chaptername Installation
-  
+  .chaptername.right Setup
+  .chapter.flex Chapter 2
 
 %main.leaf.flex
   .inner.justify
+    %h2 
+      Machine
+    %p 
+      You'll need a computer with at least the following configuration:
     %p
-      > Once node is installed check with 
-      %span.monospace 
-        $ node -v
-    .terminal.turnoff
-      %p $ node -v
+      %strong 
+        OS: 
+      Windows 10, Linux (Ubuntu/Fedora), MacOS Sierra
+    %p
+      Users on Windows will also need to install a unixy-style shell interface like 
+      %a{ href: "https://technet.microsoft.com/en-us/library/hh847837.aspx"} 
+        Powershell, 
+      %a{ href: "http://babun.github.io/"} 
+        Babun, 
+      %a{ href: "https://github.com/cmderdev/cmder"} 
+        Cmnder 
+      or 
+      %a{ href: "https://www.cygwin.com/"} 
+        Cygwin.  
 
-    %h4
-      Windows
-    %p
-      Download the Windows installer and run the installer (the .msi file) in the previous step. Follow the prompts in the installer, accept the license agreement, click the NEXT button to accept the default installation settings. 
-    %p
-      Restart your computer.
+      Mac & linux have what is called the `terminal` app or the bash or the shell. 
 
-    %h4 Linux
-    %p
-      Use package control to grab the appropriate 
-      %a{ href: "https://nodejs.org/en/download/package-manager/"} 
-        node installer 
-      for your distribution of linux.
+    %h4 Memory 
+    %p Minimum 2G RAM 
 
-    %p
-      Once node is installed on your machine check its version with 
-      %span.monospace $ node -v
-
+    %h4 Browser
+    %p 
+      Google Chrome, Mozilla Firefox, Apple Safari or MS Edge. Having an older version of IE is also recommended for the purpose of 
+      %em testing.

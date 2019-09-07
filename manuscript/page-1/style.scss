@@ -25,6 +25,9 @@ h3 {
 }
 
 .lifeform {
+  position: absolute;
+  top: 20vh;
+  right: 10vw;
   float: right;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);

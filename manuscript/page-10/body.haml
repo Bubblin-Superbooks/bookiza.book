@@ -4,40 +4,28 @@
 
 %main.leaf.flex
   .inner.justify
-
-    %h4 Install GIT
-    
+    %h4 
+      Install Nodejs
+    %p 
+      Recommended Node v6.2.0 or above. 
     %p
-      Internally Bookiza utilizes 
-      %a{ href: "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"} 
-        git-scm  
-      to hook up your manuscript to a repository. While not mandatory it is highly recommended to check-in your manuscript into a repository service like 
-      %a{ href: "https://github.com" } 
-        Github 
-      or 
-      %a{ href: "https://bitbucket.org"} 
-        Bitbucket 
-      and back it up. You can use any other version control software if you like. 
+      It is recommended to install the latest stable (It's FREE!) version of node (v6.2.0 as of writing this) directly from the 
+      %a{ href: "https://nodejs.org/en/download/" } 
+        Nodes.js® website. 
+    %h4
+      Mac/ El Capitan
 
-      %h5 Mac / El Capitan
-      %p
-        If you are using Mac, you may already have Git. To find out, open a terminal and enter 
-        %span.monospace 
-          git --version. 
-        If it's not already installed: 
-        .terminal.turnoff
-          $ brew install git
-
-      %p
-        Or you can 
-        %a{ href: "http://git-scm.com/downloads" } 
-          download 
-        the installer, double-click the dmg and complete its installation. 
+    %p
+      On Mac it is generally recommended to install nodejs with 
+      %a{href: "http://brew.sh/"} 
+        Homebrew 
+      (Instructions on right). 
+      Once your system is ready to brew, install node with 
+      %span.monospace 
+        $ brew install node
     .terminal.turnoff
-      %p
-        ~/your/terminal/root$ git --version 
-      %p 
-        git version 2.10.1
-        %span.prompt 
-          &nbsp;
-
+      %p $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      %p $ brew update
+      %p $ brew doctor
+      %p $ brew install node  </p>
+      

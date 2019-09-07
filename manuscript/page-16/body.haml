@@ -1,36 +1,30 @@
 %header.tape.flex
-  .chaptername.right Manuscript
-  .chapter.flex Chapter 5
+  .chaptername.right Registration
+  .chapter.flex Chapter 4
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
-    %h1 Manuscript
+    %h1 Registration
     %p 
-      Now for the moment of truth. 
+      Bookiza must be registered to be able to publish books online. 
     %p
-      To initialize a new project (book, comics, magazine or blank) with exactly '2N' number of pages pass the 
-      %span.monospace 
-        \--leafs 
-      option with value 'N' and a template name if required. 
-      Like so:
+      It comes pre-integrated with Bubblin's POST & PATCH API so you can publish your work online easily with just one command: 
+      %span.monospace $ bookiza publish. 
+    %p
+      To register:
+
     .terminal.turnoff
       %p
-        $ bookiza new MY-AWESOME-BOOK-TITLE --leafs n --template comics 
-
+        $ bookiza register      ### Shortcut = $ b z  #### See $ b -h
 
     %p
-      Bookiza's 
-      %span.monospace new 
-      command will set up your project, bootstrap the manuscript (leafs) along with necessary configurations and apply the layout template you passed along in the options (if any). 
-    %p
-      Bookiza will also 
-      %em 
-        npm install 
-      all the dependencies your project will need, 
-      %em git initialize 
-      the project and then seek confirmation from you to check-it into Github.
-      
-    %p
-      Inside the manuscript/ folder you’ll find that 2N number of blank pages, the place where you’ll be spending maximum of your time writing.
+      Sign up on 
+      %a{ href: "https://bubbl.in/about"} Bubblin 
+      —a hosting platform for superbooks—to get your 
+      %span.monospace api_key 
+      & bubblin credentials for the registration above. 
 
-
+    %p
+      Note: Your Bubblin 
+      %span.monospace api_key  
+      is a secret. Keep it safe and do not check it in or share with anyone.

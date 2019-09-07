@@ -4,45 +4,35 @@
 
 %main.leaf.flex
   .inner.justify
-    %p
-      The installation would take a few a minutes.
-
     %p 
-      You'll need to install 
+      After installation is complete configure git 
       %em 
-        bookiza 
+        global user.name 
       and 
       %em 
-        gulp 
-
-      globally. Once the installation is complete, check with 
-      %span.monospace $ bookiza --version.
-
-    .terminal.turnoff
-      %p
-        $ bookiza --version
-      1.0.1
+        global user.email 
+      as shown below.
 
     %p
-      For glossary:
+      > Configure git after installation with:
 
     .terminal.turnoff
       %p
-        $ bookiza --help        // Glossary
-
-
-
-    .notice 
+        $ git config --global user.name "Your Full Name"
       %p
-        If for some reason you cannot upgrade to NodeJS v6.2.0 (or above) on your system, you might want to try using Bookiza 
-        %em 
-          as-is 
-        with an older versions of node first. If it still doesn't work use 
-        %span.monospace \--harmony 
-        flag in the shebangs of <a href="https://github.com/bookiza/bookiza/blob/master/bin/bin.js">bin.js</a>. 
+        $ git config --global user.email "your@email.com"
 
-      %p 
-        Read more about this 
-        %a{ href: "http://stackoverflow.com/questions/28756759/how-to-start-global-npm-module-with-harmony-flag"} 
-          issue 
-        on Stackoverflow. 
+
+    %h4 Windows
+
+    %p 
+      Download the 
+      %a{ href: "http://git-scm.com/download/win" } 
+        Windows Installer Package 
+      for Git.
+
+
+    %p 
+      Run the installer on your computer to open Git Setup wizard and follow through all the steps to complete the installation. Once the installation has completed, open Bash.vbs inside the Git folder / Programs directory to open the command window.
+    %p
+      Configure your Git global user.name and Git global user.email as shown for mac users above.

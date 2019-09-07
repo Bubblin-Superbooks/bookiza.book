@@ -1,28 +1,22 @@
 %header.tape.flex
-  .chaptername.right Bubblin
-  .chapter.flex Chapter 10
+  .chaptername.right Afterthoughts
+  .chapter.flex Chapter 8
 
 %main.leaf
   .inner.justify
-    %h1 Bubblin 
+    %h1
+      Afterthought
     %p
-      Bubblin is a community of book lovers on the web. A marketplace for beautiful responsive books. Visit 
-      %a{ href: "https://bubbl.in" } 
-        https://bubbl.in 
-      to learn more about its slew of web/marketplace specific features that may be relevant for your book.
-    %p 
-      Bookiza comes pre-integrated with Bubblin's POST/PATCH API. This allows for publishing works directly with just one easy command: 
-      %span.monospace $ bookiza publish. 
+      With mobile being a dominant way for people to consume web, Bookiza brings only the most natural form of pagination that people loved for over a millenium: silky page turns.
     %p
-      If you registered the 
-      %em 
-        bookiza client 
-      earlier but do not remember your credentials then try:
+      Here is a premise around which Bookiza is designed:
+    %ol
+      %li
+        Book is a
+        %em>
+          collection
+        of webpages just like a website is but on a book pages are organized linearly on a stack/spine. Pagination by splitting content into pieces of equal size is a great way to optimize for linear reading experience.
+      %li
+        Paginated and piecemealed content makes for accessability, readability and maintenance along with better control on layout and engineering issues: i.e. presentation and cross-platform compatibility.
 
-    .terminal.turnoff
-      %p
-        $ bookiza whoami     
-      
-
-
-
+        %p Pagination also improves the ability to recall - i.e. memorization for readers.

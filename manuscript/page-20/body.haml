@@ -1,22 +1,75 @@
 %header.tape.flex
-  .chaptername.right Afterthoughts
-  .chapter.flex Chapter 8
+  .chaptername.right Commands
+  .chapter.flex Chapter 6
 
-%main.leaf
-  .inner.justify
-    %h1
-      Afterthought
+%main.leaf.flex
+  .inner
     %p
-      With mobile being a dominant way for people to consume web, Bookiza brings only the most natural form of pagination that people loved for over a millenium: silky page turns.
-    %p
-      Here is a premise around which Bookiza is designed:
-    %ol
-      %li
-        Book is a
-        %em>
-          collection
-        of webpages just like a website is but on a book pages are organized linearly on a stack/spine. Pagination by splitting content into pieces of equal size is a great way to optimize for linear reading experience.
-      %li
-        Paginated and piecemealed content makes for accessability, readability and maintenance along with better control on layout and engineering issues: i.e. presentation and cross-platform compatibility.
+      The following commands let you treat your book like an app (developer environment) and publish it online once its ready.
+    %table
+      %tbody
+        %tr
+          %th Command
+          %th Alias
+          %th Arguments
+          %th Options/flags
+          %th Purpose
+        %tr
+          %td length
+          %td l
+          %td 
+          %td 
+          %td Book length
+        %tr
+          %td publish
+          %td p
+          %td 
+          %td 
+          %td Publish book
+        %tr
+          %td server
+          %td s
+          %td 
+          %td \--port
+          %td Start server
+        %tr
+          %td status
+          %td 
+          %td  
+          %td 
+          %td Check status
+        %tr
+          %td push
+          %td 
+          %td 
+          %td 
+          %td Push changes
+        %tr
+          %td Update
+          %td u
+          %td 
+          %td 
+          %td Update bookiza
+        %tr
+          %td register
+          %td r
+          %td 
+          %td 
+            %p \--username 
+            %p \--password
 
-        %p Pagination also improves the ability to recall - i.e. memorization for readers.
+          %td Register bookiza
+        %tr
+          %td whoami
+          %td w
+          %td 
+          %td 
+          %td Print whoami@bookizarc
+
+    %p
+      Bookiza has been written using plain javascript. 
+    %p
+      Feel free to surf through its 
+      %a{href: "https://github.com/bookiza/bookiza"} 
+        code, 
+      fork and submit pull requests if you want to! 

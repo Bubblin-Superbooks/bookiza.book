@@ -1,40 +1,51 @@
 %header.tape.flex
-  .chapter.flex Chapter 9
-  .chaptername Preprocessors
+  .chapter.flex Chapter 7
+  .chaptername Templates
 
 %main.leaf
   .inner.justify
-    %h1 Preprocessors
+    %h1 Templates
     %p 
-      Customize bookiza according to your taste, make your book stand apart. Bookiza comes in multiple flavors: HAML, PUG, markdown, SASS, LESS, Stylus etc. 
+      Bookiza comes with several built-in responsive and FREE 
+      %a{href: "https://github.com/bookiza/templates" } 
+        templates 
+      so that writers don't have to worry about the layouts or design. Pass the `templateName` option to `bookiza new` command (see above) to apply a layout you want. 
     %p
-      There are two ways to configure bookiza for your book:
-    %ol
-      %li
-        Globally, using 
-        %span.monospace 
-          \.bookizarc
-      %li
-        Locally, per project, using 
-        %span.monospace 
-          \.bookrc
+      Current 
+      %span.monospace 
+        templateName 
+      options are:
+
+      %ul
+        %li
+          comics
+        %li
+          text
+        %li
+          magazine
+        %li
+          novel
+        %li
+          super
+        %li
+          blank
+
     %p
-      For example, this 
-      %a{href: "https://github.com/marvindanig/bookiza-framework" } 
-        sample book 
-      uses 
-      %em
-        \.haml 
-      and 
-      %em
-        \.scss 
-      instead of plain html and css.
-    %p
-      Configuring bookiza will set its 
-      %span.monospace generators
-      and 
-      %span.monospace renderers
-      to use the appropriate templating engine (or preprocessor) for all its pages and layout templates. You can also use a combination of preprocessors within the same book with a more complicated setup (discussed elsewhere). 
-    .notice
+      Feel free to contribute new templates from the stories you make but ensure that those work responsively 
+      %a{href: "https://bubbl.in/support"} 
+        everywhere. 
+      Or at least on as many devices as possible.
+
+
+    .notice 
+
       %p
-        Note: By default Bookiza is configured for the native web i.e. plain HTML, CSS and JavaScript. The output of the build is also always HTML, CSS and JavaScript no matter what preprocessor configuration or transformation logic is applied over the manuscript. 
+        We're accepting new templates for all kinds of longform. 
+      %p
+        Feel free to 
+        %a{ href: "https://github.com/bookiza/templates#fork-destination-box"}
+          fork 
+        and submit pull requests per following 
+        %a{ href: "https://github.com/bookiza/templates#rules"}
+          rules 
+        for any kind of book that you may have worked on.

@@ -1,7 +1,28 @@
-.leaf
-  .inner
-    %h1
-      Colophon
+%header.tape.flex
+  .chaptername.right Bubblin
+  .chapter.flex Chapter 10
 
+%main.leaf
+  .inner.justify
+    %h1 Bubblin 
     %p
-      Baked with the help of bookiza, haml and css3 only. No JavaScript was used for the content of this book.  
+      Bubblin is a community of book lovers on the web. A marketplace for beautiful responsive books. Visit 
+      %a{ href: "https://bubbl.in" } 
+        https://bubbl.in 
+      to learn more about its slew of web/marketplace specific features that may be relevant for your book.
+    %p 
+      Bookiza comes pre-integrated with Bubblin's POST/PATCH API. This allows for publishing works directly with just one easy command: 
+      %span.monospace $ bookiza publish. 
+    %p
+      If you registered the 
+      %em 
+        bookiza client 
+      earlier but do not remember your credentials then try:
+
+    .terminal.turnoff
+      %p
+        $ bookiza whoami     
+      
+
+
+
