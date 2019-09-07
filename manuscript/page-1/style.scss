@@ -26,6 +26,11 @@ h3 {
 
 .lifeform {
   float: right;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);  
 }
 
 .butterfly {
@@ -41,6 +46,7 @@ h3 {
   -webkit-transform: rotateX(50deg) rotateY(20deg) rotateZ(-50deg) translateY(0px);
   transform: rotateX(50deg) rotateY(20deg) rotateZ(-50deg) translateY(0px);
   width: 6vw;
+
   &::before {
     background: #362c13;
     border-radius: 50%;

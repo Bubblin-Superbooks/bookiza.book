@@ -1,12 +1,21 @@
 {
+  "name": "Bookiza Documentation",
+  "type": "text",
   "mode": {
     "HTML": "haml",
     "CSS": "scss",
     "JS": "js",
     "HEAD": "html"
   },
-  "name": "Bookiza Documentation",
-  "type": "text",
+  "cover": {
+    "punchline": "Professional book writing for web—an unofficial guide.",
+    "toc": "",
+    "author_detail": "",
+    "colophon": "",
+    "synopsis": ""
+  },
+  "status": "published",
+  "asset_url": "https://raw.githubusercontent.com/marvindanig/bookiza.book/master/assets",
   "book_id": 167,
   "book_url": "https://bubblin.io/book/bookiza-documentation-by-marvin-danig"
 }

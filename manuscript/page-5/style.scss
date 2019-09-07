@@ -7,6 +7,12 @@ body {
   width: 100vw;
   will-change: transform;
   transform: translateZ(0);  
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);  
+  
 }
 
 .words {
@@ -16,6 +22,11 @@ body {
   span {
     font-size: 18vw;
     display: inline-block;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);  
     animation: move 2s ease-in-out infinite;
     &:nth-child(2) { animation-delay: 0.49s; }
     &:nth-child(3) { animation-delay: 0.99s; }
