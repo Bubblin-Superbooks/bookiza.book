@@ -1,51 +1,22 @@
 %header.tape.flex
-  .chapter.flex Chapter 7
-  .chaptername Templates
+  .chaptername.right Afterthoughts
+  .chapter.flex Chapter 8
 
 %main.leaf
   .inner.justify
-    %h1 Templates
-    %p 
-      Bookiza comes with several built-in responsive and FREE 
-      %a{href: "https://github.com/bookiza/templates" } 
-        templates 
-      so that writers don't have to worry about the layouts or design. Pass the `templateName` option to `bookiza new` command (see above) to apply a layout you want. 
+    %h1
+      Afterthought
     %p
-      Current 
-      %span.monospace 
-        templateName 
-      options are:
-
-      %ul
-        %li
-          comics
-        %li
-          text
-        %li
-          magazine
-        %li
-          novel
-        %li
-          super
-        %li
-          blank
-
+      With mobile being a dominant way for people to consume web, Bookiza brings only the most natural form of pagination that people loved for over a millenium: silky page turns.
     %p
-      Feel free to contribute new templates from the stories you make but ensure that those work responsively 
-      %a{href: "https://bubbl.in/support"} 
-        everywhere. 
-      Or at least on as many devices as possible.
+      Here is a premise around which Bookiza is designed:
+    %ol
+      %li
+        Book is a
+        %em>
+          collection
+        of webpages just like a website is but on a book pages are organized linearly on a stack/spine. Pagination by splitting content into pieces of equal size is a great way to optimize for linear reading experience.
+      %li
+        Paginated and piecemealed content makes for accessability, readability and maintenance along with better control on layout and engineering issues: i.e. presentation and cross-platform compatibility.
 
-
-    .notice 
-
-      %p
-        We're accepting new templates for all kinds of longform. 
-      %p
-        Feel free to 
-        %a{ href: "https://github.com/bookiza/templates#fork-destination-box"}
-          fork 
-        and submit pull requests per following 
-        %a{ href: "https://github.com/bookiza/templates#rules"}
-          rules 
-        for any kind of book that you may have worked on.
+        %p Pagination also improves the ability to recall - i.e. memorization for readers.

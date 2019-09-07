@@ -1,32 +1,43 @@
 %header.tape.flex
+  .chaptername.right Installation
   .chapter.flex Chapter 3
-  .chaptername Installation
-  
 
 %main.leaf.flex
   .inner.justify
+
+    %h4 Install GIT
+    
     %p
-      > Once node is installed check with 
-      %span.monospace 
-        $ node -v
+      Internally Bookiza utilizes 
+      %a{ href: "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"} 
+        git-scm  
+      to hook up your manuscript to a repository. While not mandatory it is highly recommended to check-in your manuscript into a repository service like 
+      %a{ href: "https://github.com" } 
+        Github 
+      or 
+      %a{ href: "https://bitbucket.org"} 
+        Bitbucket 
+      and back it up. You can use any other version control software if you like. 
+
+      %h5 Mac / El Capitan
+      %p
+        If you are using Mac, you may already have Git. To find out, open a terminal and enter 
+        %span.monospace 
+          git --version. 
+        If it's not already installed: 
+        .terminal.turnoff
+          $ brew install git
+
+      %p
+        Or you can 
+        %a{ href: "http://git-scm.com/downloads" } 
+          download 
+        the installer, double-click the dmg and complete its installation. 
     .terminal.turnoff
-      %p $ node -v
-
-    %h4
-      Windows
-    %p
-      Download the Windows installer and run the installer (the .msi file) in the previous step. Follow the prompts in the installer, accept the license agreement, click the NEXT button to accept the default installation settings. 
-    %p
-      Restart your computer.
-
-    %h4 Linux
-    %p
-      Use package control to grab the appropriate 
-      %a{ href: "https://nodejs.org/en/download/package-manager/"} 
-        node installer 
-      for your distribution of linux.
-
-    %p
-      Once node is installed on your machine check its version with 
-      %span.monospace $ node -v
+      %p
+        ~/your/terminal/root$ git --version 
+      %p 
+        git version 2.10.1
+        %span.prompt 
+          &nbsp;
 

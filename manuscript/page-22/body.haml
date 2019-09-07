@@ -1,40 +1,28 @@
 %header.tape.flex
-  .chapter.flex Chapter 9
-  .chaptername Preprocessors
+  .chaptername.right Bubblin
+  .chapter.flex Chapter 10
 
 %main.leaf
   .inner.justify
-    %h1 Preprocessors
+    %h1 Bubblin 
+    %p
+      Bubblin is a community of book lovers on the web. A marketplace for beautiful responsive books. Visit 
+      %a{ href: "https://bubbl.in" } 
+        https://bubbl.in 
+      to learn more about its slew of web/marketplace specific features that may be relevant for your book.
     %p 
-      Customize bookiza according to your taste, make your book stand apart. Bookiza comes in multiple flavors: HAML, PUG, markdown, SASS, LESS, Stylus etc. 
+      Bookiza comes pre-integrated with Bubblin's POST/PATCH API. This allows for publishing works directly with just one easy command: 
+      %span.monospace $ bookiza publish. 
     %p
-      There are two ways to configure bookiza for your book:
-    %ol
-      %li
-        Globally, using 
-        %span.monospace 
-          \.bookizarc
-      %li
-        Locally, per project, using 
-        %span.monospace 
-          \.bookrc
-    %p
-      For example, this 
-      %a{href: "https://github.com/marvindanig/bookiza-framework" } 
-        sample book 
-      uses 
-      %em
-        \.haml 
-      and 
-      %em
-        \.scss 
-      instead of plain html and css.
-    %p
-      Configuring bookiza will set its 
-      %span.monospace generators
-      and 
-      %span.monospace renderers
-      to use the appropriate templating engine (or preprocessor) for all its pages and layout templates. You can also use a combination of preprocessors within the same book with a more complicated setup (discussed elsewhere). 
-    .notice
+      If you registered the 
+      %em 
+        bookiza client 
+      earlier but do not remember your credentials then try:
+
+    .terminal.turnoff
       %p
-        Note: By default Bookiza is configured for the native web i.e. plain HTML, CSS and JavaScript. The output of the build is also always HTML, CSS and JavaScript no matter what preprocessor configuration or transformation logic is applied over the manuscript. 
+        $ bookiza whoami     
+      
+
+
+

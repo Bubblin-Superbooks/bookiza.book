@@ -1,22 +1,40 @@
 %header.tape.flex
-  .chaptername.right Afterthoughts
-  .chapter.flex Chapter 8
+  .chapter.flex Chapter 9
+  .chaptername Preprocessors
 
 %main.leaf
   .inner.justify
-    %h1
-      Afterthought
+    %h1 Preprocessors
+    %p 
+      Customize bookiza according to your taste, make your book stand apart. Bookiza comes in multiple flavors: HAML, PUG, markdown, SASS, LESS, Stylus etc. 
     %p
-      With mobile being a dominant way for people to consume web, Bookiza brings only the most natural form of pagination that people loved for over a millenium: silky page turns.
-    %p
-      Here is a premise around which Bookiza is designed:
+      There are two ways to configure bookiza for your book:
     %ol
       %li
-        Book is a
-        %em>
-          collection
-        of webpages just like a website is but on a book pages are organized linearly on a stack/spine. Pagination by splitting content into pieces of equal size is a great way to optimize for linear reading experience.
+        Globally, using 
+        %span.monospace 
+          \.bookizarc
       %li
-        Paginated and piecemealed content makes for accessability, readability and maintenance along with better control on layout and engineering issues: i.e. presentation and cross-platform compatibility.
-
-        %p Pagination also improves the ability to recall - i.e. memorization for readers.
+        Locally, per project, using 
+        %span.monospace 
+          \.bookrc
+    %p
+      For example, this 
+      %a{href: "https://github.com/marvindanig/bookiza-framework" } 
+        sample book 
+      uses 
+      %em
+        \.haml 
+      and 
+      %em
+        \.scss 
+      instead of plain html and css.
+    %p
+      Configuring bookiza will set its 
+      %span.monospace generators
+      and 
+      %span.monospace renderers
+      to use the appropriate templating engine (or preprocessor) for all its pages and layout templates. You can also use a combination of preprocessors within the same book with a more complicated setup (discussed elsewhere). 
+    .notice
+      %p
+        Note: By default Bookiza is configured for the native web i.e. plain HTML, CSS and JavaScript. The output of the build is also always HTML, CSS and JavaScript no matter what preprocessor configuration or transformation logic is applied over the manuscript. 

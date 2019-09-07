@@ -1,17 +1,11 @@
 %header.tape.flex
+  .chaptername.right Commands
   .chapter.flex Chapter 6
-  .chaptername Commands
 
-%main.leaf
-  .inner.justify
-    %h1 Commands
-    %p 
-      Bookiza commands let you manage your manuscript smartly. To see the full glossary type:
-    .terminal.turnoff
-      %p $ bookiza --help
+%main.leaf.flex
+  .inner
     %p
-      Usage: bookiza [options] [command]
-
+      The following commands let you treat your book like an app (developer environment) and publish it online once its ready.
     %table
       %tbody
         %tr
@@ -21,48 +15,61 @@
           %th Options/flags
           %th Purpose
         %tr
-          %td new
-          %td n
-          %td projectName 
+          %td length
+          %td l
           %td 
-            %p \--template 
-            %p \--leafs
-            
-          %td Set up the project
-        %tr
-          %td add
-          %td a
           %td 
-          %td \--leafs
-          %td Add leaf(s) at the end of book
+          %td Book length
         %tr
-          %td insert
-          %td i
-          %td insertAt
-          %td \--leafs
-          %td Insert leaf(s) in between pages.
+          %td publish
+          %td p
+          %td 
+          %td 
+          %td Publish book
         %tr
-          %td remove
+          %td server
+          %td s
+          %td 
+          %td \--port
+          %td Start server
+        %tr
+          %td status
+          %td 
+          %td  
+          %td 
+          %td Check status
+        %tr
+          %td push
+          %td 
+          %td 
+          %td 
+          %td Push changes
+        %tr
+          %td Update
+          %td u
+          %td 
+          %td 
+          %td Update bookiza
+        %tr
+          %td register
           %td r
-          %td removeAt 
           %td 
-          %td Remove page (not leaf!) and append a blank one.
+          %td 
+            %p \--username 
+            %p \--password
+
+          %td Register bookiza
         %tr
-          %td clip
-          %td c
+          %td whoami
+          %td w
           %td 
-          %td \--leafs
-          %td Clip leaf(s) off the stack (End of book).
+          %td 
+          %td Print whoami@bookizarc
+
     %p
-      To understand why 
-      %em 
-        add, 
-      %em
-        remove 
-      or 
-      %em 
-        insert 
-      work the way they do, read the 
-      %a{href: "https://bubbl.in/book/official-handbook-by-marvin-danig/37"} 
-        following page 
-      on the Official Handbook.
+      Bookiza has been written using plain javascript. 
+    %p
+      Feel free to surf through its 
+      %a{href: "https://github.com/bookiza/bookiza"} 
+        code, 
+      fork and submit pull requests if you want to! 

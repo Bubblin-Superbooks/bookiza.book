@@ -1,38 +1,40 @@
 %header.tape.flex
+  .chaptername.right Installation
   .chapter.flex Chapter 3
-  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
+
+    %h4 Linux / Ubuntu
+
     %p 
-      After installation is complete configure git 
-      %em 
-        global user.name 
-      and 
-      %em 
-        global user.email 
-      as shown below.
+      On Ubuntu use the apt package management system or the command line utility 
+      %span.monospace apt-get 
+      (or optionally the graphical user interfaces like Synaptic or Aptitude) to install Git. 
+
+    %p 
+      Upon completing installation make sure to configure Git global user.name and global user.email as shown for mac users earlier.
+
 
     %p
-      > Configure git after installation with:
+      To install git on Ubuntu & Fedora (Linux based) systems:
+    .terminal.turnoff
+      %p
+        $ sudo apt-get install git  # Ubuntu/Debian 
+
+      %p 
+        $ sudo yum install git-all  # Fedora
+    %p
+      Check with
+      %span.monospace 
+        git --version. 
+      if it's installed correctly.
+
+    %h4
+      Install Bookiza
+
+    %p On your terminal run:
 
     .terminal.turnoff
       %p
-        $ git config --global user.name "Your Full Name"
-      %p
-        $ git config --global user.email "your@email.com"
-
-
-    %h4 Windows
-
-    %p 
-      Download the 
-      %a{ href: "http://git-scm.com/download/win" } 
-        Windows Installer Package 
-      for Git.
-
-
-    %p 
-      Run the installer on your computer to open Git Setup wizard and follow through all the steps to complete the installation. Once the installation has completed, open Bash.vbs inside the Git folder / Programs directory to open the command window.
-    %p
-      Configure your Git global user.name and Git global user.email as shown for mac users above.
+        $ npm install bookiza -g  

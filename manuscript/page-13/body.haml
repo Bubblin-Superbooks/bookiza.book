@@ -1,40 +1,48 @@
 %header.tape.flex
-  .chaptername.right Installation
   .chapter.flex Chapter 3
+  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
-
-    %h4 Linux / Ubuntu
-
-    %p 
-      On Ubuntu use the apt package management system or the command line utility 
-      %span.monospace apt-get 
-      (or optionally the graphical user interfaces like Synaptic or Aptitude) to install Git. 
-
-    %p 
-      Upon completing installation make sure to configure Git global user.name and global user.email as shown for mac users earlier.
-
-
     %p
-      To install git on Ubuntu & Fedora (Linux based) systems:
+      The installation would take a few a minutes.
+
+    %p 
+      You'll need to install 
+      %em 
+        bookiza 
+      and 
+      %em 
+        gulp 
+
+      globally. Once the installation is complete, check with 
+      %span.monospace $ bookiza --version.
+
     .terminal.turnoff
       %p
-        $ sudo apt-get install git  # Ubuntu/Debian 
+        $ bookiza --version
+      1.0.1
+
+    %p
+      For glossary:
+
+    .terminal.turnoff
+      %p
+        $ bookiza --help        // Glossary
+
+
+
+    .notice 
+      %p
+        If for some reason you cannot upgrade to NodeJS v6.2.0 (or above) on your system, you might want to try using Bookiza 
+        %em 
+          as-is 
+        with an older versions of node first. If it still doesn't work use 
+        %span.monospace \--harmony 
+        flag in the shebangs of <a href="https://github.com/bookiza/bookiza/blob/master/bin/bin.js">bin.js</a>. 
 
       %p 
-        $ sudo yum install git-all  # Fedora
-    %p
-      Check with
-      %span.monospace 
-        git --version. 
-      if it's installed correctly.
-
-    %h4
-      Install Bookiza
-
-    %p On your terminal run:
-
-    .terminal.turnoff
-      %p
-        $ npm install bookiza -g  
+        Read more about this 
+        %a{ href: "http://stackoverflow.com/questions/28756759/how-to-start-global-npm-module-with-harmony-flag"} 
+          issue 
+        on Stackoverflow. 

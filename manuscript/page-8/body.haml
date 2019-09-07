@@ -1,40 +1,36 @@
 %header.tape.flex
-  .chapter.flex Chapter 2
-  .chaptername Setup
+  .chaptername.right Installation
+  .chapter.flex Chapter 3
 
 %main.leaf.flex
   .inner.justify
-    %h1 Setup
-    .subhead Updated - Friday Nov 7, 2016 - Seven leafs
+    %h1 Installation
+    .subhead Updated - Friday Nov 7, 2016 - Seven Leafs
     .subhead
       by 
       %span.uppercase Marvin Danig
-    %h2 
-      Machine
+    %h4 
+      Install Nodejs
     %p 
-      You'll need a computer with at least the following configuration:
+      Recommended Node v6.2.0 or above. 
     %p
-      %strong 
-        OS: 
-      Windows 10, Linux (Ubuntu/Fedora), MacOS Sierra
+      It is recommended to install the latest stable (It's FREE!) version of node (v6.2.0 as of writing this) directly from the 
+      %a{ href: "https://nodejs.org/en/download/" } 
+        Nodes.js® website. 
+    %h4
+      Mac/ El Capitan
+
     %p
-      Users on Windows will also need to install a unixy-style shell interface like 
-      %a{ href: "https://technet.microsoft.com/en-us/library/hh847837.aspx"} 
-        Powershell, 
-      %a{ href: "http://babun.github.io/"} 
-        Babun, 
-      %a{ href: "https://github.com/cmderdev/cmder"} 
-        Cmnder 
-      or 
-      %a{ href: "https://www.cygwin.com/"} 
-        Cygwin.  
-
-      Mac & linux have what is called the `terminal` app or the bash or the shell. 
-
-    %h4 Memory 
-    %p Minimum 2G RAM 
-
-    %h4 Browser
-    %p 
-      Google Chrome, Mozilla Firefox, Apple Safari or MS Edge. Having an older version of IE is also recommended for the purpose of 
-      %em testing.
+      On Mac it is generally recommended to install nodejs with 
+      %a{href: "http://brew.sh/"} 
+        Homebrew 
+      (Instructions on right). 
+      Once your system is ready to brew, install node with 
+      %span.monospace 
+        $ brew install node
+    .terminal.turnoff
+      %p $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      %p $ brew update
+      %p $ brew doctor
+      %p $ brew install node  </p>
+      

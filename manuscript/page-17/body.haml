@@ -1,36 +1,68 @@
 %header.tape.flex
-  .chaptername.right Manuscript
-  .chapter.flex Chapter 5
+  .chapter.flex Chapter 6
+  .chaptername Commands
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
-    %h1 Manuscript
+    %h1 Commands
     %p 
-      Now for the moment of truth. 
-    %p
-      To initialize a new project (book, comics, magazine or blank) with exactly '2N' number of pages pass the 
-      %span.monospace 
-        \--leafs 
-      option with value 'N' and a template name if required. 
-      Like so:
+      Bookiza commands let you manage your manuscript smartly. To see the full glossary type:
     .terminal.turnoff
-      %p
-        $ bookiza new MY-AWESOME-BOOK-TITLE --leafs n --template comics 
-
-
+      %p $ bookiza --help
     %p
-      Bookiza's 
-      %span.monospace new 
-      command will set up your project, bootstrap the manuscript (leafs) along with necessary configurations and apply the layout template you passed along in the options (if any). 
+      Usage: bookiza [options] [command]
+
+    %table
+      %tbody
+        %tr
+          %th Command
+          %th Alias
+          %th Arguments
+          %th Options/flags
+          %th Purpose
+        %tr
+          %td new
+          %td n
+          %td projectName 
+          %td 
+            %p \--template 
+            %p \--leafs
+            
+          %td Set up the project
+        %tr
+          %td add
+          %td a
+          %td 
+          %td \--leafs
+          %td Add leaf(s) at the end of book
+        %tr
+          %td insert
+          %td i
+          %td insertAt
+          %td \--leafs
+          %td Insert leaf(s) in between pages.
+        %tr
+          %td remove
+          %td r
+          %td removeAt 
+          %td 
+          %td Remove page (not leaf!) and append a blank one.
+        %tr
+          %td clip
+          %td c
+          %td 
+          %td \--leafs
+          %td Clip leaf(s) off the stack (End of book).
     %p
-      Bookiza will also 
+      To understand why 
       %em 
-        npm install 
-      all the dependencies your project will need, 
-      %em git initialize 
-      the project and then seek confirmation from you to check-it into Github.
-      
-    %p
-      Inside the manuscript/ folder you’ll find that 2N number of blank pages, the place where you’ll be spending maximum of your time writing.
-
-
+        add, 
+      %em
+        remove 
+      or 
+      %em 
+        insert 
+      work the way they do, read the 
+      %a{href: "https://bubbl.in/book/official-handbook-by-marvin-danig/37"} 
+        following page 
+      on the Official Handbook.

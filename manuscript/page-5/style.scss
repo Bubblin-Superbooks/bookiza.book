@@ -1,63 +1,40 @@
 body {
-  font: 3vw/1.15 "PT Sans Narrow", sans-serif;
-}
-
-.leaf {
+  background: #444;
+  overflow-x: hidden;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
   height: 100vh;
-  width: 80%;
-  margin: auto;
+  width: 100vw;
+  will-change: transform;
+  transform: translateZ(0);  
 }
 
-.justify {
-  text-align: unset;
-}
-
-.center {
-  text-align: auto;
-  margin: unset;
-}
-
-.inner {
-  margin: 15% auto;
-  width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  li {
-    line-height: 3vw;
-    list-style: outside none none;
-    margin: 0;
-  }
-}
-
-a {
-  background: rgba(255, 255, 255, 1);
-  color: hsla(0, 5%, 35%, 1);
-  float: left;
-  width: 90%;
-  clear: both;
-  text-decoration: none;
-  margin: 1px 0;
-  padding: 1.5% 5%;
-  -webkit-border-radius: 1vw;
-  -moz-border-radius: 1vw;
-  -o-border-radius: 1vw;
-  -ms-border-radius: 1vw;
-  border-radius: 1vw;
-  &:hover {
-    background: hsla(144, 80%, 33%, 1);    
-    color: white;
-    float: left;
-    width: 90%;
-    clear: both;
-    text-decoration: none;
-    cursor: pointer;
-    text-shadow: none;
-  }
+.words {
+  color: #444;
+  font-size: 0;
+  line-height: 1;
   span {
-    float: right;
-    font-size: 80%;
+    font-size: 18vw;
+    display: inline-block;
+    animation: move 2s ease-in-out infinite;
+    &:nth-child(2) { animation-delay: 0.49s; }
+    &:nth-child(3) { animation-delay: 0.99s; }
+    &:nth-child(4) { animation-delay: 1.49s; }
   }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-33%, 0);
+  }
+  50% {
+    text-shadow: 0 1vw 4vw rgba(black, 0.3);
+  }
+  100% {
+    transform: translate(33%, 0);
+  }
+}
+
+* {
+  box-sizing: border-box;
 }

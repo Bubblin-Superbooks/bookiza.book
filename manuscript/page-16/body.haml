@@ -1,40 +1,36 @@
 %header.tape.flex
-  .chapter.flex Chapter 4 
-  .chaptername Registration 
+  .chaptername.right Manuscript
+  .chapter.flex Chapter 5
 
 %main.leaf.flex
   .inner.justify
-    %h4 Manual registration
-
+    %h1 Manuscript
+    %p 
+      Now for the moment of truth. 
     %p
-      You can also set the the 
-      %span.monospace api_key 
-      and user credentials manually. 
-      Paste the following 
-      %a{href: "https://raw.githubusercontent.com/bookiza/bookiza/master/.bookizarc"} 
-        gist 
-      into an arc file (.bookizarc) at the root of your system.
-
+      To initialize a new project (book, comics, magazine or blank) with exactly '2N' number of pages pass the 
+      %span.monospace 
+        \--leafs 
+      option with value 'N' and a template name if required. 
+      Like so:
     .terminal.turnoff
       %p
-        $ touch .bookizarc      // At the root
-      %p
-        $ vi .bookizarc         // Copy & paste the gist above:
-    
+        $ bookiza new MY-AWESOME-BOOK-TITLE --leafs n --template comics 
+
 
     %p
-      Complete these steps at the root of your machine:
-      %ul 
-        %li
-          Touch a dotfile named .bookizarc (Bookiza Arc).
-        %li
-          Open the file in an editor and paste the gist above.
-        %li
-          Paste the 
-          %span.monospace api_key 
-          from your Bubblin Account (in /Settings) on the bookiza arc.
-        %li
-          Place your Bubblin username & email on the bookiza arc, save and close.
+      Bookiza's 
+      %span.monospace new 
+      command will set up your project, bootstrap the manuscript (leafs) along with necessary configurations and apply the layout template you passed along in the options (if any). 
+    %p
+      Bookiza will also 
+      %em 
+        npm install 
+      all the dependencies your project will need, 
+      %em git initialize 
+      the project and then seek confirmation from you to check-it into Github.
+      
+    %p
+      Inside the manuscript/ folder you’ll find that 2N number of blank pages, the place where you’ll be spending maximum of your time writing.
 
-      You're all set. 
 

@@ -1,75 +1,51 @@
 %header.tape.flex
-  .chaptername.right Commands
-  .chapter.flex Chapter 6
+  .chapter.flex Chapter 7
+  .chaptername Templates
 
-%main.leaf.flex
-  .inner
+%main.leaf
+  .inner.justify
+    %h1 Templates
+    %p 
+      Bookiza comes with several built-in responsive and FREE 
+      %a{href: "https://github.com/bookiza/templates" } 
+        templates 
+      so that writers don't have to worry about the layouts or design. Pass the `templateName` option to `bookiza new` command (see above) to apply a layout you want. 
     %p
-      The following commands let you treat your book like an app (developer environment) and publish it online once its ready.
-    %table
-      %tbody
-        %tr
-          %th Command
-          %th Alias
-          %th Arguments
-          %th Options/flags
-          %th Purpose
-        %tr
-          %td length
-          %td l
-          %td 
-          %td 
-          %td Book length
-        %tr
-          %td publish
-          %td p
-          %td 
-          %td 
-          %td Publish book
-        %tr
-          %td server
-          %td s
-          %td 
-          %td \--port
-          %td Start server
-        %tr
-          %td status
-          %td 
-          %td  
-          %td 
-          %td Check status
-        %tr
-          %td push
-          %td 
-          %td 
-          %td 
-          %td Push changes
-        %tr
-          %td Update
-          %td u
-          %td 
-          %td 
-          %td Update bookiza
-        %tr
-          %td register
-          %td r
-          %td 
-          %td 
-            %p \--username 
-            %p \--password
+      Current 
+      %span.monospace 
+        templateName 
+      options are:
 
-          %td Register bookiza
-        %tr
-          %td whoami
-          %td w
-          %td 
-          %td 
-          %td Print whoami@bookizarc
+      %ul
+        %li
+          comics
+        %li
+          text
+        %li
+          magazine
+        %li
+          novel
+        %li
+          super
+        %li
+          blank
 
     %p
-      Bookiza has been written using plain javascript. 
-    %p
-      Feel free to surf through its 
-      %a{href: "https://github.com/bookiza/bookiza"} 
-        code, 
-      fork and submit pull requests if you want to! 
+      Feel free to contribute new templates from the stories you make but ensure that those work responsively 
+      %a{href: "https://bubbl.in/support"} 
+        everywhere. 
+      Or at least on as many devices as possible.
+
+
+    .notice 
+
+      %p
+        We're accepting new templates for all kinds of longform. 
+      %p
+        Feel free to 
+        %a{ href: "https://github.com/bookiza/templates#fork-destination-box"}
+          fork 
+        and submit pull requests per following 
+        %a{ href: "https://github.com/bookiza/templates#rules"}
+          rules 
+        for any kind of book that you may have worked on.

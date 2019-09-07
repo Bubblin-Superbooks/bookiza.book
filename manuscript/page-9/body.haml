@@ -1,36 +1,32 @@
 %header.tape.flex
-  .chaptername.right Installation
   .chapter.flex Chapter 3
+  .chaptername Installation
+  
 
 %main.leaf.flex
   .inner.justify
-    %h1 Installation
-    .subhead Updated - Friday Nov 7, 2016 - Seven Leafs
-    .subhead
-      by 
-      %span.uppercase Marvin Danig
-    %h4 
-      Install Nodejs
-    %p 
-      Recommended Node v6.2.0 or above. 
     %p
-      It is recommended to install the latest stable (It's FREE!) version of node (v6.2.0 as of writing this) directly from the 
-      %a{ href: "https://nodejs.org/en/download/" } 
-        Nodes.js® website. 
+      > Once node is installed check with 
+      %span.monospace 
+        $ node -v
+    .terminal.turnoff
+      %p $ node -v
+
     %h4
-      Mac/ El Capitan
+      Windows
+    %p
+      Download the Windows installer and run the installer (the .msi file) in the previous step. Follow the prompts in the installer, accept the license agreement, click the NEXT button to accept the default installation settings. 
+    %p
+      Restart your computer.
+
+    %h4 Linux
+    %p
+      Use package control to grab the appropriate 
+      %a{ href: "https://nodejs.org/en/download/package-manager/"} 
+        node installer 
+      for your distribution of linux.
 
     %p
-      On Mac it is generally recommended to install nodejs with 
-      %a{href: "http://brew.sh/"} 
-        Homebrew 
-      (Instructions on right). 
-      Once your system is ready to brew, install node with 
-      %span.monospace 
-        $ brew install node
-    .terminal.turnoff
-      %p $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-      %p $ brew update
-      %p $ brew doctor
-      %p $ brew install node  </p>
-      
+      Once node is installed on your machine check its version with 
+      %span.monospace $ node -v
+

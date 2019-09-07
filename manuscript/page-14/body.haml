@@ -1,48 +1,30 @@
 %header.tape.flex
-  .chapter.flex Chapter 3
-  .chaptername Installation
+  .chaptername.right Registration
+  .chapter.flex Chapter 4
 
-%main.leaf.flex
+%main.leaf
   .inner.justify
-    %p
-      The installation would take a few a minutes.
-
+    %h1 Registration
     %p 
-      You'll need to install 
-      %em 
-        bookiza 
-      and 
-      %em 
-        gulp 
-
-      globally. Once the installation is complete, check with 
-      %span.monospace $ bookiza --version.
+      Bookiza must be registered to be able to publish books online. 
+    %p
+      It comes pre-integrated with Bubblin's POST & PATCH API so you can publish your work online easily with just one command: 
+      %span.monospace $ bookiza publish. 
+    %p
+      To register:
 
     .terminal.turnoff
       %p
-        $ bookiza --version
-      1.0.1
+        $ bookiza register      ### Shortcut = $ b z  #### See $ b -h
 
     %p
-      For glossary:
+      Sign up on 
+      %a{ href: "https://bubbl.in/about"} Bubblin 
+      —a hosting platform for superbooks—to get your 
+      %span.monospace api_key 
+      & bubblin credentials for the registration above. 
 
-    .terminal.turnoff
-      %p
-        $ bookiza --help        // Glossary
-
-
-
-    .notice 
-      %p
-        If for some reason you cannot upgrade to NodeJS v6.2.0 (or above) on your system, you might want to try using Bookiza 
-        %em 
-          as-is 
-        with an older versions of node first. If it still doesn't work use 
-        %span.monospace \--harmony 
-        flag in the shebangs of <a href="https://github.com/bookiza/bookiza/blob/master/bin/bin.js">bin.js</a>. 
-
-      %p 
-        Read more about this 
-        %a{ href: "http://stackoverflow.com/questions/28756759/how-to-start-global-npm-module-with-harmony-flag"} 
-          issue 
-        on Stackoverflow. 
+    %p
+      Note: Your Bubblin 
+      %span.monospace api_key  
+      is a secret. Keep it safe and do not check it in or share with anyone.
