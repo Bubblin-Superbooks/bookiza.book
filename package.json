@@ -1,6 +1,6 @@
 {
   "name": "bookiza-framework",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Superbook Bookiza Framework by Marvin Danig",
   "keywords": [
     "superbook",
@@ -11,7 +11,7 @@
   "homepage": "https://bubblin.io/marvin",
   "repository": {
     "type": "git",
-    "url": "git+https://github/project/url/here"
+    "url": "https://github.com/marvindanig/bookiza-framework"
   },
   "scripts": {
     "postinstall": "node ./crust/scripts/ready.js"
