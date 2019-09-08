@@ -1,35 +1,32 @@
-<div class='dragon-radar'>
-  <label class='dragon-radar-button' for='screen-toggle'>
-    <div class='dragon-radar-button__knob'></div>
-  </label>
-  <input id='screen-toggle' type='checkbox'>
-  <div class='radar-screen'>
-    <div class='radar-screen__content--positions'>
-      <div class='current-position'></div>
-      <div class='ball-indicators'>
-        <div class='ball-indicator'>2</div>
-        <div class='ball-indicator'></div>
-        <div class='ball-indicator'>4</div>
-      </div>
-    </div>
-    <div class='radar-screen__content--tracking'>
-      <div class='tracking-motion'>
-        <div class='ball-indicator'>1</div>
-        <div class='tracking-line'>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-          <div class='track-indicator'></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+%header.tape.flex
+  .chaptername.right Minefield
+  .chapter.flex Chapter 10
+
+
+.dragon-radar
+  %label.dragon-radar-button{ for: "screen-toggle"}
+    .dragon-radar-button__knob
+  %input#screen-toggle{ type: "checkbox"}/
+  .radar-screen
+    .radar-screen__content--positions
+      .current-position
+      .ball-indicators
+        .ball-indicator 2
+        .ball-indicator
+        .ball-indicator 4
+    .radar-screen__content--tracking
+      .tracking-motion
+        .ball-indicator 1
+        .tracking-line
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
+          .track-indicator
