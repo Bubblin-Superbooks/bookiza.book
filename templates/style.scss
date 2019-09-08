@@ -45,10 +45,9 @@ h6 {
     padding: 0;
 }
 
-
-
 p {
-    margin: 2vw 0;
+    text-indent: 5vw;
+    margin: 0 0;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     hyphens: none;
@@ -70,18 +69,26 @@ img {
 }
 
 a {
-  color: #fa4;
+  color: #c74;
   outline: 0 none;
-  text-decoration: none;
+  text-decoration: underline #c74;
   text-rendering: optimizelegibility;
+  text-decoration-skip-ink: auto;
   &:focus, &:active, &:hover {
     outline: 0 none;
-    color: #0af;
+    color: pink;
+    text-decoration: underline pink;
   }
   &:active {
-    text-shadow: 0 0 1px #050;
+  text-decoration: underline pink;
+    
+  }
+  &:visited {
+    color: pink;
+    text-decoration: underline dotted pink;
   }
 }
+
 
 /* Page specific */
 
@@ -253,8 +260,47 @@ pre, code {
 .notice {
   font-size: 80%;
   background: #ffc;
-  width: 80vw;
-  padding: 0.5vh 2.5vw;
+  width: 100%;
+  padding: 1vh 1vw;
+  border-radius: 3vw;
+  margin: calc(1/2 * 4vw * 1.50) 0;
+}
+
+.small {
+  font-size: 80%;
+}
+
+p.no-indent {
+  text-indent: 0;
+  /* Continue line on a new page with break on the previous page. */
+}
+
+p.stretch-last-line {
+  text-align-last: justify;
+  /* Not supported on Safari */
+}
+
+p.squeeze-para {
+  letter-spacing: -0.5px;
+  /* Handle orphans and widows manually */
+}
+
+p.stretch-para {
+  letter-spacing: 0.5px;
+  /* Handle orphans and widows manually */
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pad-vertically {
+  padding: calc(4vw * 1) 0;
+}
+
+.center {
+  text-align: center;
+  margin: inherit auto;
 }
 
 .small {
