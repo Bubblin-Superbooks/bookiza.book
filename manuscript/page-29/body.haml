@@ -1,17 +1,75 @@
-.leaf
+%header.tape.flex
+  .chaptername.right Commands
+  .chapter.flex Chapter 6
+
+%main.leaf.flex
   .inner
-    %h1
-      Credits
+    %p
+      The following commands let you treat your book like an app (developer environment) and publish it online once its ready.
+    %table
+      %tbody
+        %tr
+          %th Command
+          %th Alias
+          %th Arguments
+          %th Options/flags
+          %th Purpose
+        %tr
+          %td length
+          %td l
+          %td 
+          %td 
+          %td Book length
+        %tr
+          %td publish
+          %td p
+          %td 
+          %td 
+          %td Publish book
+        %tr
+          %td server
+          %td s
+          %td 
+          %td \--port
+          %td Start server
+        %tr
+          %td status
+          %td 
+          %td  
+          %td 
+          %td Check status
+        %tr
+          %td push
+          %td 
+          %td 
+          %td 
+          %td Push changes
+        %tr
+          %td Update
+          %td u
+          %td 
+          %td 
+          %td Update bookiza
+        %tr
+          %td register
+          %td r
+          %td 
+          %td 
+            %p \--username 
+            %p \--password
 
-    %ul
-      %li
-        Adriane Payne's 
-        %a{ href: "http://codepen.io/dazulu/pen/aOzqvz"}
-          Butterfly 
-        in CSS3.
+          %td Register bookiza
+        %tr
+          %td whoami
+          %td w
+          %td 
+          %td 
+          %td Print whoami@bookizarc
 
-      %li
-        Chris Coyier's 
-        %a{ href: "http://codepen.io/chriscoyier/pen/RRxQZg"}
-          Show & Tell  
-         experiment @DevCon, Denver.
+    %p
+      Bookiza has been written using plain javascript. 
+    %p
+      Feel free to surf through its 
+      %a{href: "https://github.com/bookiza/bookiza"} 
+        code, 
+      fork and submit pull requests if you want to! 

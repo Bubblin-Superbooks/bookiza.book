@@ -1,68 +1,11 @@
 %header.tape.flex
-  .chapter.flex Chapter 6
-  .chaptername Commands
+  .chaptername.right Preprocessors
+  .chapter.flex Chapter 9
+  
+%main.leaf.flex
+  .inner
+    %p combination of preprocessors within the same book with a more complicated setup (discussed elsewhere). 
+    .notice
+      %p
+        Note: By default Bookiza is configured for the native web i.e. plain HTML, CSS and JavaScript. The output of the build is also always HTML, CSS and JavaScript no matter what preprocessor configuration or transformation logic is applied over the manuscript. 
 
-%main.leaf
-  .inner.justify
-    %h1 Commands
-    %p 
-      Bookiza commands let you manage your manuscript smartly. To see the full glossary type:
-    .terminal.turnoff
-      %p $ bookiza --help
-    %p
-      Usage: bookiza [options] [command]
-
-    %table
-      %tbody
-        %tr
-          %th Command
-          %th Alias
-          %th Arguments
-          %th Options/flags
-          %th Purpose
-        %tr
-          %td new
-          %td n
-          %td projectName 
-          %td 
-            %p \--template 
-            %p \--leafs
-            
-          %td Set up the project
-        %tr
-          %td add
-          %td a
-          %td 
-          %td \--leafs
-          %td Add leaf(s) at the end of book
-        %tr
-          %td insert
-          %td i
-          %td insertAt
-          %td \--leafs
-          %td Insert leaf(s) in between pages.
-        %tr
-          %td remove
-          %td r
-          %td removeAt 
-          %td 
-          %td Remove page (not leaf!) and append a blank one.
-        %tr
-          %td clip
-          %td c
-          %td 
-          %td \--leafs
-          %td Clip leaf(s) off the stack (End of book).
-    %p
-      To understand why 
-      %em 
-        add, 
-      %em
-        remove 
-      or 
-      %em 
-        insert 
-      work the way they do, read the 
-      %a{href: "https://bubbl.in/book/official-handbook-by-marvin-danig/37"} 
-        following page 
-      on the Official Handbook.
