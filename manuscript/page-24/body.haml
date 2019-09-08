@@ -1,51 +1,27 @@
 %header.tape.flex
-  .chapter.flex Chapter 7
+  .chapter.flex Chapter 6
   .chaptername Templates
 
-%main.leaf
+%main.leaf.flex
   .inner.justify
     %h1 Templates
     %p 
-      Bookiza comes with several built-in responsive and FREE 
-      %a{href: "https://github.com/bookiza/templates" } 
-        templates 
-      so that writers don't have to worry about the layouts or design. Pass the `templateName` option to `bookiza new` command (see above) to apply a layout you want. 
+      Bookiza comes with several pre-built  
+      %a{href: "https://github.com/bookiza/templates"}> templates 
+      to bootstrap your project with. 
+      Choose a layout according to the type of book you are writing, like so:
+    .terminal
+      %p $ bookiza new civil-war --leafs 12 --template comics
     %p
-      Current 
-      %span.monospace 
-        templateName 
-      options are:
-
-      %ul
-        %li
-          comics
-        %li
-          text
-        %li
-          magazine
-        %li
-          novel
-        %li
-          super
-        %li
-          blank
-
-    %p
-      Feel free to contribute new templates from the stories you make but ensure that those work responsively 
-      %a{href: "https://bubbl.in/support"} 
-        everywhere. 
-      Or at least on as many devices as possible.
-
-
-    .notice 
-
-      %p
-        We're accepting new templates for all kinds of longform. 
-      %p
-        Feel free to 
-        %a{ href: "https://github.com/bookiza/templates#fork-destination-box"}
-          fork 
-        and submit pull requests per following 
-        %a{ href: "https://github.com/bookiza/templates#rules"}
-          rules 
-        for any kind of book that you may have worked on.
+      The following options can be passed to the 
+      %span.monospace \--template 
+      flag: 
+      %ol
+        %li comics, 
+        %li text, 
+        %li magazine, 
+        %li novel, 
+        %li super or 
+        %li blank to initiate without layout.
+    %p.stretch-last-line
+      It’s always a good idea to understand how
