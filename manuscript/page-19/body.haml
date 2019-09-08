@@ -1,68 +1,32 @@
 %header.tape.flex
-  .chapter.flex Chapter 6
-  .chaptername Commands
+  .chaptername.right Structure
+  .chapter.flex Chapter 5
 
-%main.leaf
+%main.leaf.flex
   .inner.justify
-    %h1 Commands
+    %h1 Structure
     %p 
-      Bookiza commands let you manage your manuscript smartly. To see the full glossary type:
+      Now that Bookiza is installed on your machine it is time for the moment of truth. 
+      Let’s create a fresh barebones project called 
+      %em> Happy Feet
+      , like so:
     .terminal.turnoff
-      %p $ bookiza --help
-    %p
-      Usage: bookiza [options] [command]
+      %p $ bookiza new happy-feet --leafs 4 --template comics
 
-    %table
-      %tbody
-        %tr
-          %th Command
-          %th Alias
-          %th Arguments
-          %th Options/flags
-          %th Purpose
-        %tr
-          %td new
-          %td n
-          %td projectName 
-          %td 
-            %p \--template 
-            %p \--leafs
-            
-          %td Set up the project
-        %tr
-          %td add
-          %td a
-          %td 
-          %td \--leafs
-          %td Add leaf(s) at the end of book
-        %tr
-          %td insert
-          %td i
-          %td insertAt
-          %td \--leafs
-          %td Insert leaf(s) in between pages.
-        %tr
-          %td remove
-          %td r
-          %td removeAt 
-          %td 
-          %td Remove page (not leaf!) and append a blank one.
-        %tr
-          %td clip
-          %td c
-          %td 
-          %td \--leafs
-          %td Clip leaf(s) off the stack (End of book).
+    %p Or in shortform:
+    .terminal.turnoff
+      %p $ b n happy-feet -l 4 -t comics
     %p
-      To understand why 
+      Notice the flags 
+      %span.monospace> \--leafs 
+      and
+      %span.monospace> \--template 
+      that are passed to the
+      %span.monospace new 
+      command to set up your manuscript. Bookiza will initialize the project with all the dependencies, layout and leafs that were passed as options. 
+    %p
+      Next, Bookiza will also 
       %em 
-        add, 
-      %em
-        remove 
-      or 
-      %em 
-        insert 
-      work the way they do, read the 
-      %a{href: "https://bubbl.in/book/official-handbook-by-marvin-danig/37"} 
-        following page 
-      on the Official Handbook.
+        npm install 
+      all the dependencies that your book is going to need. 
+      

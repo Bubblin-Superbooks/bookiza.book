@@ -1,35 +1,26 @@
 %header.tape.flex
-  .chaptername.right Setup
-  .chapter.flex Chapter 2
+  .chaptername.right Installation
+  .chapter.flex Chapter 3
 
 %main.leaf.flex
   .inner.justify
-    %h2 
-      Machine
-    %p 
-      You'll need a computer with at least the following configuration:
+    %h1 Installation
+    %p Bookiza is super easy to install.
+    %p The following dependencies must be installed before proceeding to install Bookiza.
+    .notice
+      node (>=8.11.3), gulp, shelljs, git-scm, a unixy-style shell or the terminal app and optionally hub.
+    %h4 
+      Step-1 Install Nodejs
     %p
-      %strong 
-        OS: 
-      Windows 10, Linux (Ubuntu/Fedora), MacOS Sierra
-    %p
-      Users on Windows will also need to install a unixy-style shell interface like 
-      %a{ href: "https://technet.microsoft.com/en-us/library/hh847837.aspx"} 
-        Powershell, 
-      %a{ href: "http://babun.github.io/"} 
-        Babun, 
-      %a{ href: "https://github.com/cmderdev/cmder"} 
-        Cmnder 
-      or 
-      %a{ href: "https://www.cygwin.com/"} 
-        Cygwin.  
+      It is recommended to install the latest stable (it’s free!) version of node v8.11.3 or higher as of writing this directly from the
+      %a{ href: "https://nodejs.org/en/download/" }> 
+        Node®  
+      website. 
+    %h5
+      Mac/ El Capitan
 
-      Mac & linux have what is called the `terminal` app or the bash or the shell. 
-
-    %h4 Memory 
-    %p Minimum 2G RAM 
-
-    %h4 Browser
-    %p 
-      Google Chrome, Mozilla Firefox, Apple Safari or MS Edge. Having an older version of IE is also recommended for the purpose of 
-      %em testing.
+    %p.stretch-last-line
+      On the mac it is generally recommended to install nodejs with 
+      %a{href: "http://brew.sh/"} Homebrew
+      \. 
+      Once your system is ready to brew, install node like so:

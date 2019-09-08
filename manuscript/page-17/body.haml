@@ -1,40 +1,27 @@
 %header.tape.flex
-  .chapter.flex Chapter 4 
-  .chaptername Registration 
+  .chaptername.right Registration
+  .chapter.flex Chapter 4
+
 
 %main.leaf.flex
   .inner.justify
-    %h4 Manual registration
-
+    %h1 Registration
+    %p 
+      Bookiza must be registered to be able to publish books online. 
+      It comes pre-integrated with Bubblin's RESTful POST & PATCH api so that you can publish the latest edition of your work easily with just one command: 
+    .terminal.turnoff      
+      %p $ bookiza publish 
     %p
-      You can also set the the 
+      To register sign up on 
+      %a{ href: "https://bubblin.io"}> Bubblin 
+      and grab your 
       %span.monospace api_key 
-      and user credentials manually. 
-      Paste the following 
-      %a{href: "https://raw.githubusercontent.com/bookiza/bookiza/master/.bookizarc"} 
-        gist 
-      into an arc file (.bookizarc) at the root of your system.
-
+      & Bubblin credentials to complete the registration. 
     .terminal.turnoff
       %p
-        $ touch .bookizarc      // At the root
-      %p
-        $ vi .bookizarc         // Copy & paste the gist above:
-    
+        $ bookiza register      // Provide Bubblin credentials.
 
-    %p
-      Complete these steps at the root of your machine:
-      %ul 
-        %li
-          Touch a dotfile named .bookizarc (Bookiza Arc).
-        %li
-          Open the file in an editor and paste the gist above.
-        %li
-          Paste the 
-          %span.monospace api_key 
-          from your Bubblin Account (in /Settings) on the bookiza arc.
-        %li
-          Place your Bubblin username & email on the bookiza arc, save and close.
-
-      You're all set. 
-
+    .notice
+      Note: Your 
+      %span.monospace api_key   
+      from Bubblin is a secret. Keep it safe and do not share with anyone.

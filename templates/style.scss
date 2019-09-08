@@ -27,8 +27,8 @@ h1 {
   font-size: 6vw;
   text-transform: uppercase;
   display: inline-block;
-  line-height: 1.5;
-  margin: 1vw 0 1vw;
+  line-height: calc(4vw * 1.50);
+  margin: calc(1/2 * 4vw * 1.50) 0;
   padding: 0;
   width: 100%;
   text-align: center;
@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 2vw 0;
+    margin: calc(1/2 * 4vw * 1) 0;
     padding: 0;
 }
 
@@ -88,6 +88,24 @@ a {
     text-decoration: underline dotted pink;
   }
 }
+
+hr {
+  border: 0;
+  text-align: center;
+  height: calc(4vw * 1.50);
+  /* Take a break of two lines only. */
+  margin: calc((4vw * 1.50)/2) 0;
+}
+
+hr::after {
+  content: "";
+}
+
+hr::before {
+  content: "❦";
+  color: black;
+}
+
 
 
 /* Page specific */
@@ -207,9 +225,9 @@ pre, code {
   background-color: black;
   color: #55ff55;
   margin: 3vw 0;
-  width: 75vw;
+  width: 80vw;
   border: 1px solid #ccc;
-  padding: 2vw 5vw;
+  /* padding: 2vh 1vw; */
   border-radius: 1vw;
   font-family: monospace;
   font-size: 75%;

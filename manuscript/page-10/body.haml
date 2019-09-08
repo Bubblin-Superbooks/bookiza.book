@@ -1,31 +1,24 @@
 %header.tape.flex
-  .chaptername.right Installation
   .chapter.flex Chapter 3
+  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
-    %h4 
-      Install Nodejs
-    %p 
-      Recommended Node v6.2.0 or above. 
-    %p
-      It is recommended to install the latest stable (It's FREE!) version of node (v6.2.0 as of writing this) directly from the 
-      %a{ href: "https://nodejs.org/en/download/" } 
-        Nodes.js® website. 
-    %h4
-      Mac/ El Capitan
-
-    %p
-      On Mac it is generally recommended to install nodejs with 
-      %a{href: "http://brew.sh/"} 
-        Homebrew 
-      (Instructions on right). 
-      Once your system is ready to brew, install node with 
-      %span.monospace 
-        $ brew install node
     .terminal.turnoff
       %p $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       %p $ brew update
       %p $ brew doctor
       %p $ brew install node  </p>
+    %p
+      Once the installation completes check the node version: 
+    .terminal.turnoff
+      %p $ node --version
+
+    %h5
+      Windows
+    %p
+      Download the Windows installer (an .msi file) and execute it. Follow the prompts shown by the installer, accept the license agreement and click the NEXT button to accept the default installation settings. 
+    %p
+      Restart your computer.
+    
       

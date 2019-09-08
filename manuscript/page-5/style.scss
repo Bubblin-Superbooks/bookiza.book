@@ -4,7 +4,7 @@ body {
 
 }
 
-.leaf {
+.life {
   overflow-x: hidden;
   font-family: 'Rubik Mono One', sans-serif;
   text-align: center;
@@ -55,4 +55,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.data{
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
 }

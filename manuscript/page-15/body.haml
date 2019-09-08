@@ -1,48 +1,25 @@
 %header.tape.flex
+  .chaptername.right Installation
   .chapter.flex Chapter 3
-  .chaptername Installation
+
 
 %main.leaf.flex
   .inner.justify
     %p
-      The installation would take a few a minutes.
-
-    %p 
-      You'll need to install 
-      %em 
-        bookiza 
-      and 
-      %em 
-        gulp 
-
-      globally. Once the installation is complete, check with 
-      %span.monospace $ bookiza --version.
+      Once the installation is completed check with
+      %span.monospace 
+        git --version. 
+      if it's installed correctly.
 
     .terminal.turnoff
       %p
-        $ bookiza --version
-      1.0.1
-
-    %p
-      For glossary:
-
-    .terminal.turnoff
-      %p
-        $ bookiza --help        // Glossary
-
-
-
-    .notice 
-      %p
-        If for some reason you cannot upgrade to NodeJS v6.2.0 (or above) on your system, you might want to try using Bookiza 
-        %em 
-          as-is 
-        with an older versions of node first. If it still doesn't work use 
-        %span.monospace \--harmony 
-        flag in the shebangs of <a href="https://github.com/bookiza/bookiza/blob/master/bin/bin.js">bin.js</a>. 
-
+        $ git --version 
       %p 
-        Read more about this 
-        %a{ href: "http://stackoverflow.com/questions/28756759/how-to-start-global-npm-module-with-harmony-flag"} 
-          issue 
-        on Stackoverflow. 
+        git version 2.23.0
+        %span.prompt 
+          &nbsp;
+    %p
+      That's it your system is now ready to git and we are for the last and final step!
+    %hr
+
+

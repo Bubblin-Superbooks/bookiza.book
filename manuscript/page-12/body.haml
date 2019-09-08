@@ -1,43 +1,33 @@
 %header.tape.flex
-  .chaptername.right Installation
   .chapter.flex Chapter 3
+  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
 
-    %h4 Install GIT
+    %h4 Step-2 Install GIT
     
     %p
-      Internally Bookiza utilizes 
-      %a{ href: "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"} 
-        git-scm  
-      to hook up your manuscript to a repository. While not mandatory it is highly recommended to check-in your manuscript into a repository service like 
-      %a{ href: "https://github.com" } 
-        Github 
-      or 
-      %a{ href: "https://bitbucket.org"} 
-        Bitbucket 
-      and back it up. You can use any other version control software if you like. 
+      Bookiza uses 
+      %a{ href: "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git", rel: "nofollow noopener noreferrer"}>
+        git-scm
+      to track changes on your manuscript. It is highly recommended to push all changes on your manuscript into the master repository regularly as 
+      %a{href: "https://bubblin.io"} Bubblin
+      , the host site, keeps only the latest edition.
+    %p
+      Let's install git next:
+    %h5 MacOS
+    %p
+      If you are on a Mac it might already have Git pre-installed by Apple. To find out, open a terminal emulator and enter 
+      %span.monospace 
+        git --version. 
+    %p
+      If it is not already installed: 
+      .terminal.turnoff
+        %p $ brew install git
 
-      %h5 Mac / El Capitan
-      %p
-        If you are using Mac, you may already have Git. To find out, open a terminal and enter 
-        %span.monospace 
-          git --version. 
-        If it's not already installed: 
-        .terminal.turnoff
-          $ brew install git
-
-      %p
-        Or you can 
-        %a{ href: "http://git-scm.com/downloads" } 
-          download 
-        the installer, double-click the dmg and complete its installation. 
-    .terminal.turnoff
-      %p
-        ~/your/terminal/root$ git --version 
-      %p 
-        git version 2.10.1
-        %span.prompt 
-          &nbsp;
-
+    %p
+      Or you can 
+      %a{ href: "http://git-scm.com/downloads" } 
+        download 
+      the installer, double-click the dmg and complete its installation. 

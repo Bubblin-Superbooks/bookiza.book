@@ -1,51 +1,35 @@
 %header.tape.flex
-  .chapter.flex Chapter 7
-  .chaptername Templates
+  .chaptername.right Structure
+  .chapter.flex Chapter 5
 
 %main.leaf
   .inner.justify
-    %h1 Templates
-    %p 
-      Bookiza comes with several built-in responsive and FREE 
-      %a{href: "https://github.com/bookiza/templates" } 
-        templates 
-      so that writers don't have to worry about the layouts or design. Pass the `templateName` option to `bookiza new` command (see above) to apply a layout you want. 
+    %p.no-indent
+      the manuscript folder. In this directory you’ll see a subfolders for each page of the book, like so: 
+      %span.monospace page-1
+      , 
+      %span.monospace page-2
+      , 
+      %span.monospace page-3
+      … and so on
+      \.
+      Inside each page subfolder, you will find two component files named 
+      %span.monospace> 
+        body.html
+      %span.monospace> 
+        style.css
+      that go on to compose a typical (web)page on the book. 
     %p
-      Current 
-      %span.monospace 
-        templateName 
-      options are:
-
-      %ul
-        %li
-          comics
-        %li
-          text
-        %li
-          magazine
-        %li
-          novel
-        %li
-          super
-        %li
-          blank
-
+      You can also add javascript using a 
+      %span.monospace scripts.js 
+      file and a head resource using a 
+      %span.monospace  head.html 
+      file if so required. 
+      Bookiza will combine the contents from each of these files and generate a page corresponding to the page number on your book.
+    .notice
+      Note that there will always be even number of pages inside the manuscript. 
+      See 
+      %a{ href: "https://bubblin.io/docs/concept"} why
+      ?
     %p
-      Feel free to contribute new templates from the stories you make but ensure that those work responsively 
-      %a{href: "https://bubbl.in/support"} 
-        everywhere. 
-      Or at least on as many devices as possible.
-
-
-    .notice 
-
-      %p
-        We're accepting new templates for all kinds of longform. 
-      %p
-        Feel free to 
-        %a{ href: "https://github.com/bookiza/templates#fork-destination-box"}
-          fork 
-        and submit pull requests per following 
-        %a{ href: "https://github.com/bookiza/templates#rules"}
-          rules 
-        for any kind of book that you may have worked on.
+      See chapter on Preprocessors as well.

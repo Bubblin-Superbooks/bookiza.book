@@ -1,15 +1,23 @@
 %header.tape.flex
+  .chaptername.right Installation
+
   .chapter.flex Chapter 3
-  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
+    .terminal.turnoff
+      %p
+        $ git --version 
+      %p 
+        git version 2.23.0
+        %span.prompt 
+          &nbsp;
     %p 
-      After installation is complete configure git 
-      %em 
+      After the installation is complete configure git 
+      %span.monospace 
         global user.name 
       and 
-      %em 
+      %span.monospace 
         global user.email 
       as shown below.
 
@@ -22,17 +30,11 @@
       %p
         $ git config --global user.email "your@email.com"
 
+    That's it. Your Mac is now ready for the last step.
 
-    %h4 Windows
-
-    %p 
+    %h5 Windows
+    %p.stretch-last-line
       Download the 
-      %a{ href: "http://git-scm.com/download/win" } 
-        Windows Installer Package 
-      for Git.
-
-
-    %p 
-      Run the installer on your computer to open Git Setup wizard and follow through all the steps to complete the installation. Once the installation has completed, open Bash.vbs inside the Git folder / Programs directory to open the command window.
-    %p
-      Configure your Git global user.name and Git global user.email as shown for mac users above.
+      %a{ href: "http://git-scm.com/download/win" }> 
+        Windows Installer Package
+      for Git and run the installer on your computer to open up the Git Setup wizard. Follow through 

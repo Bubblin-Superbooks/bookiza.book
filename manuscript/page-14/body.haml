@@ -1,40 +1,30 @@
 %header.tape.flex
-  .chaptername.right Installation
   .chapter.flex Chapter 3
+  .chaptername Installation
 
 %main.leaf.flex
   .inner.justify
-
-    %h4 Linux / Ubuntu
-
-    %p 
-      On Ubuntu use the apt package management system or the command line utility 
-      %span.monospace apt-get 
-      (or optionally the graphical user interfaces like Synaptic or Aptitude) to install Git. 
-
-    %p 
-      Upon completing installation make sure to configure Git global user.name and global user.email as shown for mac users earlier.
-
-
+    %p.no-indent
+      all the steps to complete the installation. Once the installation is complete, open Bash.vbs inside the 
+      %span.monospace Git 
+      folder under 
+      %span.monospace Programs 
+      directory to open the command window.
     %p
-      To install git on Ubuntu & Fedora (Linux based) systems:
+      Configure your Git user.name and user.email as 
+      %a{ href: "13", class: "page"}> shown 
+      for Mac users earlier.
+
+
+    %h5 Ubuntu/Fedora
+
+    %p 
+      As with any other linux distro, use the package manager and the command line utility (or GUIs like Synaptic or Aptitude) to install Git. Upon installation, configure Git as shown for Mac and Windows users earlier.      
+    %p
+      Here are the steps to install git on Ubuntu & Fedora each:
     .terminal.turnoff
       %p
         $ sudo apt-get install git  # Ubuntu/Debian 
 
       %p 
         $ sudo yum install git-all  # Fedora
-    %p
-      Check with
-      %span.monospace 
-        git --version. 
-      if it's installed correctly.
-
-    %h4
-      Install Bookiza
-
-    %p On your terminal run:
-
-    .terminal.turnoff
-      %p
-        $ npm install bookiza -g  
