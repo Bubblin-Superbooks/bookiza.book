@@ -150,19 +150,6 @@ hr::before {
 
 /* Your custom styles below */
 
-
-.subhead {
-  font-size:60%;
-}
-
-.head{
-  font-family: 'Lato', serif;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
 .tape {
     height: 6vh;
     width: 100%;
@@ -170,7 +157,6 @@ hr::before {
     top: 0;
     left: 0;
     color: white;
-    background: #fa4;
     font-size: 3vw;
     font-weight: 400;
 }
@@ -187,10 +173,51 @@ hr::before {
   color: white;
 }
 
+.orange{
+  background: #e84;
+}
+
+.red{
+  background: #c44;
+}
+
+.green{
+  background: #098;
+}
+
+.blue {
+  background: #06a; 
+}
+
+.purple {
+  background: #535;
+}
+
+.brown {
+  background: #630;
+}
+
+.pink {
+  background: #a5a; 
+}
+
+.yellow{
+  background: #aa7;
+}
+
+.mauve{
+  background: #6E5AE2;
+}
+
+.neon{
+  background: #7DC65C;
+}
+
 .right {
   text-align: right;
   float:right;
 }
+
 
 .monospace, .highlight {
   font-family: monospace;
