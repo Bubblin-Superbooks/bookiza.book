@@ -1,35 +1,46 @@
 %header.tape.flex
-  .chaptername.right Minefield
+  .chaptername.right Appreciation
   .chapter.flex Chapter 10
 
+%main.leaf.flex
+  <svg style="display:block; margin: 0 auto;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80vw" viewBox="0 0 300 150">
+    <defs>
+      <g id="feather">
+        <path d="M150,150 l-30,-100 a30,30 0 0,1 60,0 Z" fill="#7DC65C" style="fill-opacity: 0.85;"/>
+      </g>
+      <g id="crown">
+        <path d="M150,75 l-1.25,-6 a1.25,1.25 0 0,1 2.5,0 Z" fill="#fff"/>
+      </g>
+    </defs>
 
-.dragon-radar
-  %label.dragon-radar-button{ for: "screen-toggle"}
-    .dragon-radar-button__knob
-  %input#screen-toggle{ type: "checkbox"}/
-  .radar-screen
-    .radar-screen__content--positions
-      .current-position
-      .ball-indicators
-        .ball-indicator 
-          %a{ href: "", class: "page" } 2
-        .ball-indicator
-        .ball-indicator 
-          %a{ href: "", class: "page" } 3
-    .radar-screen__content--tracking
-      .tracking-motion
-        .ball-indicator 
-          %a{ href: "", class: "page"} 1424
-        .tracking-line
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
-          .track-indicator
+    <use xlink:href="#feather" x="0" y="0"/>
+    <use xlink:href="#feather" x="0" y="0">
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="23,150,150; 20,150,150; 23,150,150" dur="2s"/>
+    </use>
+    <use xlink:href="#feather" x="0" y="0">
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="46,150,150; 40,150,150; 46,150,150" dur="2s"/>
+    </use>
+    <use xlink:href="#feather" x="0" y="0">
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="69,150,150; 60,150,150; 69,150,150" dur="2s"/>
+    </use>
+    <use xlink:href="#feather" x="0" y="0">
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="-23,150,150; -20,150,150; -23,150,150" dur="2s"/>
+    </use>
+    <use xlink:href="#feather" x="0" y="0">
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="-46,150,150; -40,150,150; -46,150,150" dur="2s"/>
+    </use>
+    <use xlink:href="#feather" x="0" y="0">
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="-69,150,150; -60,150,150; -69,150,150" dur="2s"/>
+    </use>
+
+    <g>
+      <use xlink:href="#crown" x="0" y="0"/>
+      <use xlink:href="#crown" x="0" y="0" transform="translate(1, 0) rotate(30,150,75)"/>
+      <use xlink:href="#crown" x="0" y="0" transform="translate(-1, 0) rotate(-30,150,75)"/>
+      <animateTransform attributeName="transform" type="rotate"  attributeType="XML" repeatCount="indefinite" values="-45,150,75; -60,150,75; -45,150,75" dur="2s"/>
+    </g>
+
+    <g>
+      <path d="M105,145 c60,-10 10,-95 40,-80 l5,0 c-30,5 45,40 0,110 M139,66 a1,1 0 1,0 2,0 a1,1 0 1,0 -2,0" fill="#fff" fill-rule="evenodd" transform="translate(0, 5) rotate(10,105,145)" />
+    </g>
+  </svg>
