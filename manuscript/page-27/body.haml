@@ -1,6 +1,6 @@
 %header.tape.flex
   .chaptername.right Preprocessors
-  .chapter.flex Chapter 9
+  .chapter.flex Chapter 7
   
 %main.leaf.flex
   .inner
@@ -11,13 +11,19 @@
         book 
       itself uses HAML and SCSS instead of plain html and css.
     %p
-      Configuring bookiza will set its 
+      The Bookiza 
       %span.monospace generators
       and 
       %span.monospace renderers
-      to use the appropriate templating engine (or preprocessor) for all its pages and layout templates. You can also use a   
-    %p combination of preprocessors within the same book with a more complicated setup (discussed elsewhere). 
+      will use the appropriate templating engine (or preprocessor) according to the mode provided on 
+      %em all 
+      the pages of the book including layout. 
+    
     .notice
-      %p
-        Note: By default Bookiza is configured for the native web i.e. plain HTML, CSS and JavaScript. The output of the build is also always HTML, CSS and JavaScript no matter what preprocessor configuration or transformation logic is applied over the manuscript. 
+      %strong> Note: 
+      By default Bookiza uses the standard building blocks of the web i.e. HTML, CSS and JavaScript to avoid burden of fancy configurability. This is done on purpose since the output expected by the host website (
+      %a{ href: "https://bubblin.io"} https://bubblin.io 
+      ) and web is always going to be HTML, CSS and JavaScript. 
+
+    %hr
 

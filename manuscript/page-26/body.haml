@@ -1,24 +1,28 @@
 %header.tape.flex
-  .chapter.flex Chapter 9
+  .chapter.flex Chapter 7
   .chaptername Preprocessors
 
 %main.leaf.flex
   .inner.justify
     %h1 Preprocessors
     %p 
-      It is possible to customize Bookiza for convenience or to make your book stand apart from the rest. 
+      It is possible to customize Bookiza according to your taste for convenience or to simply make your book stand apart.
+      Write using Markdown (recommended), Haml, Pug, Sass, Less, Stylus or in plain HTML, CSS or JavaScript. 
     %p
-      Write your book using Markdown (recommended), Haml, Pug, Sass, Less, Stylus or simply plain HTML, CSS and JavaScript. You can choose different combination of preprocessors for different books and also vary the preprocessing pipeline at component or page-level.
+      You can choose different combinations of preprocessors and set it up either globally or system-wide or per project depending on the need. 
 
-    %h5 Configuring Bookiza:
-    %ol
+    %h5 Configurations:
+    %ol.small
       %li
-        Globally, using ArcBookiza mode i.e. object property on 
+        Global: Use ArcBookiza mode i.e. 
+        %span.monospace> mode   
+        object property on 
         %span.monospace> \.bookizarc 
-        object called 
-        %span.monospace> mode, 
+        at the root of your machine. 
+        
       %li
-        Locally, per Superbook, using the 
-        %span.monospace> \.bookrc 
+        Local: Use the 
         %span.monospace> mode 
-        object.
+        object property on
+        %span.monospace> \.bookrc 
+        at the root of your project.
