@@ -1,75 +1,64 @@
 %header.tape.flex
-  .chaptername.right Commands
-  .chapter.flex Chapter 6
+  .chaptername.right Glossary
+  .chapter.flex Chapter 8
 
 %main.leaf.flex
   .inner
-    %p
-      The following commands let you treat your book like an app (developer environment) and publish it online once its ready.
-    %table
+    %table.small
       %tbody
         %tr
           %th Command
           %th Alias
           %th Arguments
           %th Options/flags
-          %th Purpose
         %tr
-          %td length
-          %td l
+          %td move
+          %td m
+          %td currentLoc newLoc
           %td 
-          %td 
-          %td Book length
+
         %tr
           %td publish
           %td p
           %td 
           %td 
-          %td Publish book
         %tr
           %td server
           %td s
           %td 
           %td \--port
-          %td Start server
         %tr
           %td status
           %td 
           %td  
           %td 
-          %td Check status
         %tr
           %td push
           %td 
           %td 
           %td 
-          %td Push changes
         %tr
           %td Update
           %td u
           %td 
           %td 
-          %td Update bookiza
         %tr
           %td register
           %td r
           %td 
           %td 
-            %p \--username 
-            %p \--password
-
-          %td Register bookiza
+            %div \--username 
+            %div \--password
         %tr
           %td whoami
           %td w
           %td 
           %td 
-          %td Print whoami@bookizarc
+        %tr
+          %td clip
+          %td c
+          %td 
+          %td \--leafs
+    %p
+      Tip: The `bookiza` keyword is mapped to alphabet `b` on your keyboard as shortcut.
 
-    %p
-      Bookiza has been written using plain javascript. 
-    %p
-      Feel free to surf through its 
-      %a{href: "https://github.com/bookiza/bookiza"} 
-        code, 
-      fork and submit pull requests if you want to! 
