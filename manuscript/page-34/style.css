@@ -1,7 +1,7 @@
   body {
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(cyan, transparent), linear-gradient(-45deg, magenta, transparent), linear-gradient(45deg, yellow, transparent);
+  background: linear-gradient(#9c9003, transparent), linear-gradient(45deg, #0072ff, transparent), linear-gradient(-45deg, red, transparent);
   background-blend-mode: multiply;
   height: 100vh;
   weight: 100vw;

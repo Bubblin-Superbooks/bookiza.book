@@ -23,7 +23,7 @@
     "chalk": "3.0.0",
     "del": "5.1.0",
     "delayed": "2.0.0",
-    "fs-extra": "8.1.0",
+    "fs-extra": "9.0.0",
     "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-compile-handlebars": "0.6.1",
